@@ -8,8 +8,12 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG SOC="t194"
 
 
-RUN apt-get update && apt-get install -y tmux && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+        tmux \
+        vim \ 
+        && rm -rf /var/lib/apt/lists/*
 RUN apt-get update && apt-get install -y vim && rm -rf /var/lib/apt/lists/*
+
 
 
 RUN apt-get update && \
