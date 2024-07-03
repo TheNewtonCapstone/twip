@@ -1,0 +1,3 @@
+#! /bin/bash
+
+/opt/nvidia/jetson-io/config-by-function.py -o dtb 1="pwm0 pwm1"
