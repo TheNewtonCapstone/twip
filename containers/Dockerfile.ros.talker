@@ -1,9 +1,0 @@
-FROM dustynv/ros:humble-desktop-l4t-r36.2.0
-# install ros tutorials packages
-
-
-
-RUN apt-get update && apt-get install -y \
-    tmux \
-    vim \ 
-    && rm -rf /var/lib/apt/lists/*

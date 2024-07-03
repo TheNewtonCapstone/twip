@@ -3,6 +3,7 @@ An advanced educational platform for analyzing reinforcement learning algorithms
 
 # Required Materials
 - Jetson Nano development board running L4T version 32.6.1 or later (It has to be running docker)
+- `docker-compose`
 
 # Installing
 First, clone this repository onto your Jetson development board with 
