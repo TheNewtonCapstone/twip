@@ -16,7 +16,8 @@ class Subscriber: public rclcpp::Node{
 	public:
 		Subscriber(): Node("Subscriber"){
 		subscription_ = this -> create_subscription<std_msgs::msg::String>(
-				"topic", 10, std::bind(&Subscriber::topic_callback, this, _1));
+				"micro_ros_arduino_node_publisher", 10, std::bind(&Subscriber::topic_callback, this, _1));
+		RCLCPP_INFO(this->get_logger(), "Subscriber initialiazed"); 
 
 		}
 };

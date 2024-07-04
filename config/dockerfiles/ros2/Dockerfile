@@ -1,7 +1,7 @@
-FROM microros/micro-ros-agent:humble
+FROM dustynv/ros:humble-desktop-l4t-r36.2.0
 
 # Create a non-root user
-ARG USERNAME=ms_agent
+ARG USERNAME=ros_runtime
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
@@ -28,7 +28,7 @@ RUN apt-get update && apt-get install -y \
 # Copy the entrypoint and bashrc scripts so we have 
 # our container's environment set up correctly
 COPY entrypoint.sh /entrypoint.sh
-#COPY bashrc /home/${USERNAME}/.bashrc
+COPY ../bashrc /home/${USERNAME}/.bashrc
 
 # Set up entrypoint and default command
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
