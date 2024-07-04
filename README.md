@@ -12,7 +12,7 @@ First, clone this repository onto your Jetson development board with
 
 From the gym2real directory, build the Docker image with
 
-        nvidia-docker build -t {image_name} .
+        docker build -t {image_name} .
         
 or pull with
 
