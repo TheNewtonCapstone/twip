@@ -8,33 +8,26 @@ An advanced educational platform for analyzing reinforcement learning algorithms
 # Installing
 First, clone this repository onto your Jetson development board with 
 
-        git clone --recurse-submodules https://github.com/jonah-gourlay44/gym2real
+        git clone --recurse-submodules https://github.com/Sim2Capstone/twip/
 
-From the gym2real directory, build the Docker image with
+From the `config/dockerfiles/ros`  directory, build the Docker image with
 
         docker build -t {image_name} .
-        
-or pull with
 
-        docker pull jonahg1/zeroshotrt
+Source the bash file 
 
-Perform the post installation steps with 
-
-        sudo scripts/post_inst
-
-Finally, reboot your system to complete the installation
-
+        source setup.bash
 # Usage
-Run a new container from the zeroshotrt Docker image with
+Run a new container from the twip Docker image with
 
-        ./scripts/docker_run {container_name}
+          ros {image_name}
+all the flags are set in the setup.bash file, that is sourced before. 
 
-The container can be restarted after exiting with
+If you have an esp32 connected,run a separate docker container with the microros agent with the command
 
-        docker start -i {container_name}
+          run_agent 
 
-To build the code from inside the container type
+Once the container has begun, make sure be in the `ros_ws` directory and run.
 
         colcon build
         
-From the 'workspace' directory.
