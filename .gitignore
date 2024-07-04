@@ -31,7 +31,10 @@
 *.out
 *.app
 
+# build and install files 
 install/
 log/
 build/
 .vscode/
+
+

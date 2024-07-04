@@ -48,6 +48,6 @@ RUN echo ". /opt/ros/humble/setup.bash" >> ~/.bashrc
 RUN echo ". /uros_ws/install/setup.bash" >> ~/.bashrc
 
 # setup entrypoint
-# COPY ./entrypoint.sh /entrypoint.sh
-#ENTRYPOINT ["/bin/sh", "/micro-ros_entrypoint.sh"]
-# CMD ["--help"]
+COPY ./entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
+CMD ["bash"]

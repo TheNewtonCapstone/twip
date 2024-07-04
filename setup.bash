@@ -1,5 +1,11 @@
 #! /bin/bash
-#docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -v6
+
+
+function run_mr_agent(){
+    docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -v6
+
+}
+
 
 
 #run micro ros agent container
