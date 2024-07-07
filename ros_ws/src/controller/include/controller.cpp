@@ -12,7 +12,7 @@ public:
 
     // initialize the onnx runtime sessions
     Ort::SessionOptions options;
-    Ort::CUDAProviderOptions cuda_options;
+    Ort::CUDAProvideOptions cuda_options;
 
     cuda_options.device_id = 0;
     cuda_options.cudmm_con_algo_search = EXHAUSTIVE;
