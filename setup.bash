@@ -1,14 +1,11 @@
 #! /bin/bash
 
-
-function run_mr_agent(){
+# spawn a docker container running, there is no options to interact with the container 
+function run_agent(){
     docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -v6
-
 }
 
-
-
-#run micro ros agent container
+#run micro ros agent container with the option to interact with the container 
 function agent(){
     ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )"/&> /dev/null && pwd )"
     echo $ROOT_DIR
@@ -17,7 +14,6 @@ function agent(){
         --net=host \
         -v $ROOT_DIR:/workspace \
         -v /dev/shm/:/dev/shm \
-        --privileged \
         --device=/dev \
         --device-cgroup-rule='c *:* rmw' \
         -v /dev:/dev \
