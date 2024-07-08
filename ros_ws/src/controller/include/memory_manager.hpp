@@ -130,10 +130,17 @@ public:
         }
 
         /*
-         * Create a buffer for read or write operation
-         * rw=0 for read
-         * rw=1 for write
-         */
+         * Create and maps a shared memory buffer for read or write operation
+         * Parameters : 
+         * - Name : name of the shared memory segment 
+         * - rw : mode of operation (rw=0 for read, rw=1 for write)
+         * 
+         * Returns 
+         *Description:
+        * This function creates a shared memory segment with the given name and maps it 
+        * to the process's address space. The size of the segment is determined from the 
+        * configuration. Depending on the value of rw, the memory is mapped for reading 
+        * or writing.          */
         template <class T>
         int create_buffer(const char *name, const int &rw, T *&ptr)
         {

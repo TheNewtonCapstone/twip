@@ -9,19 +9,33 @@ using std::placeholders::_1;
 class Controller : public rclcpp::Node {
 public:
   Controller() : Node("controller") {
+    control_state = std::make_shared<sensor_msgs::msg::JointState>();
+    imu_state = std::make_shared<sensor_msgs::msg::Imu>();
 
-        "imu_values", 10, std::bind(&Controller::topic_callback, this, _1));
-        subscription_ = this->create_subscription<std_msgs::msg::Int32>(
-  }
+    control_state = std::make_shared<sensor_msgs::msg::JointState>();
+    motor_state->position = {0,0};
+    motor_state-> = {"ml", "mr"};
 
-public:
-  void topic_callback(const std_msgs::msg::Int32::SharedPtr msg) const {
-    RCLCPP_INFO(this->get_logger(), "Received: '%d'", msg->data);
+    
+        
   }
-  rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr subscription_;
+  Controller
+
+  private: 
+    void control_loop();
+
+    //ros2 interfaces 
+    rclcpp::Subscription<sensor_msgs::msg::Imu> SharedPtr sub_;
+    rclcpp::Subscription<sensor_msgs::msg::JointState> SharedPtr sub_;
+    rclcpp::Publisher<sensor_msgs::msg::JointState> SharedPtr sub_;
+    sensor_msgs
+
+
+
 };
 int main(int argc, char *argv[]) {
   printf("hello world controller package\n");
+
   rclcpp::init(argc, argv);
   rclcpp::spin(std::make_shared<Controller>());
   rclcpp::shutdown();
