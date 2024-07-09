@@ -2,6 +2,12 @@
 #include "rclcpp/rclcpp.hpp"
 #include <cstdio>
 
+#include "sensor_msgs/msg/jointState.hp"
+#include <sensor_msgs/msg/joint_state.hpp>
+
+#include "sensor_msgs/msg/imu.hpp"
+#include "sensor_msgs/msg/joint_state.hpp"
+
 #include "std_msgs/msg/int32.hpp"
 #include "std_msgs/msg/string.hpp"
 
@@ -117,7 +123,7 @@ public:
                 imu_state_->linear_acceleration.z);
 
   }
-  void motor_state_callback(const sensor_msgs::msg::JointState::SharedPtr msg){
+  void motor_state_callback(const sensor_msgs::msgs::JointState::SharedPtr msg){
     motor_state_ = std::move(msg);
     motor_position_[0] = motor_state->position[0];
     motor_position_[1] = motor_state->position[1];
@@ -130,7 +136,7 @@ public:
     pub_->publish(command_);
   }
 
-  ControllerNode::control_loop(){
+   void control_loop(){
     auto now = std::chrono::high_resolution_clock::now();
     float dt - std::chrono::duration_cast<std::chrono::microseconds>(now - last_time_).count()/1e6;
     last_time = std::chrono::high_resolution_clock::now();
@@ -139,7 +145,6 @@ public:
     motor_command_publish();
   }
   private: 
-    void control_loop();
 
     //ros2 interfaces 
     rclcpp::Subscription<sensor_msgs::msg::Imu> SharedPtr sub_;

@@ -2,7 +2,10 @@
 
 set -e
 
-source /opt/ros/humble/setup.bash
+echo "source /opt/ros/humble/install/setup.bash" >> ~/.bashrc
+sudo rosdep init
+rosdep update
+
 
 #echo "Provided arguments: $@"
 
