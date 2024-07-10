@@ -19,7 +19,6 @@ public:
     // create ros2 messages 
     imu_state_ = std::make_shared<sensor_msgs::msg::Imu>();
 
-    imu_quaternion_[3] = 1;
     RCLCPP_INFO(get_logger(), "Imu initialized");
     sub_ = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
               std::bind(&Controller::imu_callback,this, std::placeholders::_1));
@@ -27,7 +26,6 @@ public:
     RCLCPP_INFO(get_logger(), "1113 ROS imu subscriber succesffuly created ");
 
   }
-  ~Controller(){};
 
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
      imu_state_ = std::move(msg);
@@ -39,15 +37,6 @@ public:
                 imu_state_->orientation.y, 
                 imu_state_->orientation.z, 
                 imu_state_->orientation.w);
-    RCLCPP_INFO(get_logger(), "Angular velocity - x: %f, y: %f, z: %f", 
-                imu_state_->angular_velocity.x, 
-                imu_state_->angular_velocity.y, 
-                imu_state_->angular_velocity.z);
-    RCLCPP_INFO(get_logger(), "Linear acceleration - x: %f, y: %f, z: %f", 
-                imu_state_->linear_acceleration.x, 
-                imu_state_->linear_acceleration.y, 
-                imu_state_->linear_acceleration.z);
-
   }
 
   private: 
@@ -57,7 +46,7 @@ public:
     
     //ros2 messages
     sensor_msgs::msg::Imu::SharedPtr imu_state_;
-    float *imu_quaternion_ = nullptr;
+    std::array<float, 4> imu_quaternion_;
 };
 
 /*
