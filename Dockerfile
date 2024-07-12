@@ -24,7 +24,8 @@ RUN apt-get update && apt-get install -y \
     vim \ 
     && rm -rf /var/lib/apt/lists/*
 
-
+RUN wget https://nvidia.box.com/shared/static/iizg3ggrtdkqawkmebbfixo7sce6j365.whl -O onnxruntime_gpu-1.16.0-cp38-cp38-linux_aarch64.whl \
+    && pip3 install onnxruntime_gpu-1.16.0-cp38-cp38-linux_aarch64.whl
 # Copy the entrypoint and bashrc scripts so we have 
 # our container's environment set up correctly
 COPY config/ros/entrypoint.sh /entrypoint.sh

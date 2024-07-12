@@ -1,5 +1,4 @@
 #! /bin/bash
-
 # spawn a docker container running, there is no options to interact with the container 
 function run_agent(){
     docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -v6
@@ -36,4 +35,24 @@ function ros(){
         --device-cgroup-rule='c *:* rmw' \
         -v /dev:/dev \
         $IMAGE
+}
+
+// build onnx
+function build_onnx(){
+    ./onnxruntime/build.sh \
+            --use_cuda \
+            --cuda_home /usr/local/cuda \
+            --cudnn_home /usr/lib/aarch64-linux-gnu \
+            --use_tensorrt \
+            --tensorrt_home /usr/lib/aarch64-linux-gnu \
+            --config RelWithDebInfo \
+            --build_shared_lib \
+            --build \
+            --build_wheel \
+            --update \
+            --skip_submodule_sync \
+            --skip_tests \
+            --arm64 \
+            --cmake_extra_defines ONNXRUNTIME_VERSION=1.9.1 CMAKE_INSTALL_PREFIX=~/code/ZeroShotRT/onnxruntime/install CUDA_CMAKE_COMPILE=/usr/local/cuda/nvcc
+
 }
