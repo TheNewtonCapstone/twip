@@ -11,8 +11,8 @@ public:
     : observations_(observations), actions_(actions), model_path_(path) {
     
 
-    input_buffer_ = new float[observations_]();
-    output_buffer_ = new float[actions_]();
+   input_buffer_ =  std::vector<float>(observations);
+    output_buffer_ =std::vector<float>(actions);
 
     // initialize the onnx runtime sessions
     Ort::SessionOptions options;
@@ -53,10 +53,6 @@ public:
               << output_tensor_ << std::endl;
 
   }
-  ~OnnxController() {
-    delete[] input_buffer_;
-    delete[] output_buffer_;
-  }
   int run(float dt = 0) {
     // load data into buffers
     for (auto &trans : pre_tranforms_) {
@@ -84,7 +80,8 @@ public:
 
   // get pointers to the input and output of the buffers
   std::pair<float* , float *> get_buffers() {
-  std::pair<float *, float *>(input_buffer_, output_buffer_);
+    std::pair<float *, float *>(input_buffer_, output_buffer_);
+    return 0;
   }
 
   int control_step(float dt) { 
@@ -105,8 +102,10 @@ private:
   int observations_;
   int actions_;
 
-  float *input_buffer_ = nullptr;
-  float *output_buffer_ = nullptr;
+
+  std::vector<float> input_buffer_();
+  std::vector<float> output_buffer_();
+
 
   // vectors to store pre and post transform rulesl
   std::vector<TransformRule<float, float>> pre_tranforms_;
