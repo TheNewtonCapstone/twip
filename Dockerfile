@@ -1,6 +1,6 @@
 FROM dustynv/ros:humble-desktop-l4t-r36.2.0
-
-# Create a non-root user
+##
+### Create a non-root user
 ARG USERNAME=ros_runtime
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
@@ -24,13 +24,35 @@ RUN apt-get update && apt-get install -y \
     vim \ 
     && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://nvidia.box.com/shared/static/iizg3ggrtdkqawkmebbfixo7sce6j365.whl -O onnxruntime_gpu-1.16.0-cp38-cp38-linux_aarch64.whl \
-    && pip3 install onnxruntime_gpu-1.16.0-cp38-cp38-linux_aarch64.whl
+ENV PIP_ROOT_USER_ACTION=ignore
+RUN apt-get update && apt-get install -y \
+    tmux \
+    vim \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+
+RUN git clone --recursive https://github.com/microsoft/onnxruntime
+RUN export CUDACXX="/usr/local/cuda/bin/nvcc"
+
+RUN sudo apt install -y --no-install-recommends \
+  build-essential software-properties-common libopenblas-dev \
+  libpython3.10-dev python3-pip python3-dev python3-setuptools python3-wheel
+
+RUN ./onnxruntime/build.sh --config Release --update --allow_running_as_root --build --parallel 2 --build_wheel \
+--update --skip_submodule_sync --skip_tests --use_tensorrt --cuda_home /usr/local/cuda --cudnn_home /usr/lib/aarch64-linux-gnu \
+--tensorrt_home /usr/lib/aarch64-linux-gnu --arm64
+
+
+
+
+
 # Copy the entrypoint and bashrc scripts so we have 
 # our container's environment set up correctly
-COPY config/ros/entrypoint.sh /entrypoint.sh
+COPY config/dockerfiles/ros/entrypoint.sh /entrypoint.sh
 COPY bashrc /home/${USERNAME}/.bashrc
 
 # Set up entrypoint and default command
 ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
 CMD ["bash"]
+
