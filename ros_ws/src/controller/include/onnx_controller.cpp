@@ -7,10 +7,9 @@
 class OnnxController {
 
 public:
-  OnnxController(const std::string path, const int observations, const int actions) 
-    : observations_(observations), actions_(actions), model_path_(path) {
+  OnnxController(const std::string model_path, const int observations, const int actions) 
+    :model_path_(model_path), observations_(observations), actions_(actions){
     
-
    input_buffer_ =  std::vector<float>(observations);
     output_buffer_ =std::vector<float>(actions);
 
@@ -19,7 +18,6 @@ public:
     OrtCUDAProviderOptions cuda_options;
 
     cuda_options.device_id = 0;
-    cuda_options.cudnn_conv_algo_search = EXHAUSTIVE;
     cuda_options.gpu_mem_limit = SIZE_MAX;
     cuda_options.arena_extend_strategy = 0;
     cuda_options.do_copy_in_default_stream = 0;
@@ -38,11 +36,11 @@ public:
     std::cout << "Memory information : \n"  << memory_info << std::endl;
 
     input_tensor_ = Ort::Value::CreateTensor<float>(
-      memory_info, input_buffer_, observations_, input_shape_.data(),
+      memory_info, input_buffer_.data(), input_buffer_.size(), input_shape_.data(),
       input_shape_.size());
     
     output_tensor_ = Ort::Value::CreateTensor<float>(
-      memory_info, output_buffer_, actions_, output_shape_.data(),
+      memory_info, output_buffer_.data(), output_buffer_.size(), output_shape_.data(),
       output_shape_.size());
     
 
@@ -53,38 +51,19 @@ public:
               << output_tensor_ << std::endl;
 
   }
-  int run(float dt = 0) {
-    // load data into buffers
-    for (auto &trans : pre_tranforms_) {
-      trans.apply();
-    }
-
+  int run() {
+  
+    // add transformation 
     // main control step
-    control_step(dt);
+    control_step();
 
-    // write to to buffers
-    for (auto &trans : post_transforms_) {
-      trans.apply();
-    }
+    // transformation 
 
     return 0;
   }
 
-  int addTransforms(std::vector<TransormRule<float, float>> pre_tranforms_,
-                    std::vector<TransormRule<float, float>> post_transforms_) {
 
-    pre_tranforms_ = pre_tranforms_;
-    post_transforms_ = post_transforms_;
-    return 0;
-  };
-
-  // get pointers to the input and output of the buffers
-  std::pair<float* , float *> get_buffers() {
-    std::pair<float *, float *>(input_buffer_, output_buffer_);
-    return 0;
-  }
-
-  int control_step(float dt) { 
+  int control_step() { 
     const char *input_names[] = {"observations"};
     const char *output_names[] = {"actions"};
     
@@ -98,21 +77,16 @@ public:
     }
 
 private:
-  std::string model_path;
+  std::string model_path_;
   int observations_;
   int actions_;
 
 
-  std::vector<float> input_buffer_();
-  std::vector<float> output_buffer_();
+  std::vector<float> input_buffer_;
+  std::vector<float> output_buffer_;
 
 
-  // vectors to store pre and post transform rulesl
-  std::vector<TransformRule<float, float>> pre_tranforms_;
-  std::vector < TransformRule<float, float>> post_transforms_;
 
-  // onnx
-  std::string model_path_;
 
   Ort::Env env_;
   Ort::Session session_{nullptr};

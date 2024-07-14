@@ -17,7 +17,7 @@ class Controller : public rclcpp::Node {
 public:
   Controller(const std::string model_path, const int num_observations, const int num_actions) 
     :Node("controller"), 
-    model_(model_path_, num_observations, num_actions){
+    model_(model_path, num_observations, num_actions){
     // create ros2 messages 
     imu_state_ = std::make_shared<sensor_msgs::msg::Imu>();
 
@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
   std::cout << "Controller Node Started " << std::endl;
 
   rclcpp::init(argc, argv);
-  std::string model_path = "./Twip.pth.onnx"
+  std::string model_path = "./Twip.pth.onnx";
   int num_observations = 2;
   int num_actions =1;
   auto controller = std::make_shared<Controller>(model_path, num_observations,num_actions);

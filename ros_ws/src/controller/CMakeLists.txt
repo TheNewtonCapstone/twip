@@ -5,15 +5,28 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
+# setup onnx runtime  dependency 
+set(ONNXRUNTIME_INCLUDE_DIR /usr/local/include/onnxruntime)
+set(ONNXRUNTIME_BIN_DIR /usr/local/lib/onnxruntime)
 # find dependencies
-find_package(onnxruntime REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)    
 
 
+include_directories(
+  include 
+  "${ONNXRUNTIME_INCLUDE_DIR}/"
+)
+link_directories("${ONNXRUNTIME_BIN_DIR}/")
+
+
 add_executable(controller src/controller_node.cpp)
+target_link_libraries(controller
+  onnxruntime
+)
+
 #ament_target_dependencies(controller std_msgs rclcpp)
 target_include_directories(controller PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -29,6 +42,9 @@ ament_target_dependencies(
 install(TARGETS controller
   DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY include 
+          DESTINATION  include/ )
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -40,5 +56,4 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-
 ament_package()
