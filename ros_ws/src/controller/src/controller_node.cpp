@@ -9,19 +9,23 @@
 
 #include "std_msgs/msg/int32.hpp"
 #include "std_msgs/msg/string.hpp"
+#include "./../include/onnx_controller.cpp"
 
 using std::placeholders::_1;
 
 class Controller : public rclcpp::Node {
 public:
-  Controller() 
-    :Node("controller"){
+  Controller(const std::string model_path, const int num_observations, const int num_actions) 
+    :Node("controller"), 
+    model_(model_path_, num_observations, num_actions){
     // create ros2 messages 
     imu_state_ = std::make_shared<sensor_msgs::msg::Imu>();
 
     RCLCPP_INFO(get_logger(), "Imu initialized");
+
     sub_ = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
               std::bind(&Controller::imu_callback,this, std::placeholders::_1));
+
 
     RCLCPP_INFO(get_logger(), "1113 ROS imu subscriber succesffuly created ");
 
@@ -43,10 +47,16 @@ public:
 
     //ros2 interfaces 
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sub_;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub_;
     
     //ros2 messages
     sensor_msgs::msg::Imu::SharedPtr imu_state_;
     std::array<float, 4> imu_quaternion_;
+    int num_observations_;
+    int num_actions_;
+    std::string model_path_;
+    OnnxController model_;
+
 };
 
 /*
@@ -84,7 +94,10 @@ int main(int argc, char *argv[]) {
   std::cout << "Controller Node Started " << std::endl;
 
   rclcpp::init(argc, argv);
-  auto controller = std::make_shared<Controller>();
+  std::string model_path = "./Twip.pth.onnx"
+  int num_observations = 2;
+  int num_actions =1;
+  auto controller = std::make_shared<Controller>(model_path, num_observations,num_actions);
 
   set_real_time_priority(controller);
 
