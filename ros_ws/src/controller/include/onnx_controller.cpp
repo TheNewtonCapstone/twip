@@ -7,6 +7,9 @@
 class OnnxController {
 
 public:
+
+  std::vector<float> input_buffer_;
+  std::vector<float> output_buffer_;
   OnnxController(const std::string model_path, const int observations, const int actions) 
     :model_path_(model_path), observations_(observations), actions_(actions){
     
@@ -45,10 +48,10 @@ public:
     
 
 
-    std::cout << "Input and output buffers ahve been initiliazed!\n"  
-              << memory_info << std::endl
-              << input_tensor_ << std::endl
-              << output_tensor_ << std::endl;
+    std::cout << "Input and output buffers have been initiliazed!\n"  
+              << "Address of the controller :\t" <<memory_info << std::endl
+              <<"Input tensor " << input_tensor_ << "\t tensor size: " <<input_buffer_.size()<< std::endl
+              <<"Output tensor " << output_tensor_ << "\t tensor size: " <<output_buffer_.size()<< std::endl;
 
   }
   int run() {
@@ -75,15 +78,18 @@ public:
 
     return 0; 
     }
-
+    const std::vector<float>& get_input_buffer()const {
+        return input_buffer_;
+    }
+    const std::vector<float>& get_output_buffer() const{
+      return output_buffer_;
+    }
 private:
   std::string model_path_;
   int observations_;
   int actions_;
 
 
-  std::vector<float> input_buffer_;
-  std::vector<float> output_buffer_;
 
 
 

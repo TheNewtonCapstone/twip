@@ -1,3 +1,6 @@
+#include <sstream>
+#include <unistd.h>
+#include <limits.h>
 #include <iostream>
 #include "rclcpp/rclcpp.hpp"
 #include <cstdio>
@@ -12,7 +15,7 @@
 #include "./../include/onnx_controller.cpp"
 
 using std::placeholders::_1;
-
+using namespace std::chrono_literals;
 class Controller : public rclcpp::Node {
 public:
   Controller(const std::string model_path, const int num_observations, const int num_actions) 
@@ -29,23 +32,66 @@ public:
 
     RCLCPP_INFO(get_logger(), "1113 ROS imu subscriber succesffuly created ");
 
+  
+  // initliase control loop timer
+ timer_ =  create_wall_timer(5ms, std::bind(&Controller::control_loop, this));
+
   }
 
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
      imu_state_ = std::move(msg);
 
     // Log the IMU state
-    RCLCPP_INFO(get_logger(), "IMU values:");
-    RCLCPP_INFO(get_logger(), "Orientation - x: %f, y: %f, z: %f, w: %f", 
-                imu_state_->orientation.x, 
-                imu_state_->orientation.y, 
-                imu_state_->orientation.z, 
-                imu_state_->orientation.w);
+    // RCLCPP_INFO(get_logger(), "IMU values:");
+    // RCLCPP_INFO(get_logger(), "Orientation - x: %f, y: %f, z: %f, w: %f", 
+    //             imu_state_->orientation.x, 
+    //             imu_state_->orientation.y, 
+    //             imu_state_->orientation.z, 
+    //             imu_state_->orientation.w);
+  }
+  void control_loop(){
+    std::copy(&imu_state_->orientation.x,&imu_state_->orientation.x+4,model_.input_buffer_.begin());
+    model_.run();
+    auto output = model_.output_buffer_;
+
+
+    std::ostringstream out;
+    out << "Control loop :\n";
+    out << "Imu Quaternion Values\t" 
+        << imu_state_->orientation.x << " "
+        << imu_state_->orientation.y << " " 
+        << imu_state_->orientation.z << " " 
+        << imu_state_->orientation.w;
+ 
+
+
+
+    out << "\nINPUTS:\t";
+    for(auto element : model_.get_input_buffer()){ 
+      out << element << " ";
+    }
+    out << "\nOUTPUTS\t";
+    for(auto element : model_.get_output_buffer()){
+      out << element << " ";
+    }
+    out << std::endl;
+
+
+    // RCLCPP_INFO(get_logger(), "Control loop - x: %f, y: %f, z: %f, w: %f", 
+    //             imu_state_->orientation.x, 
+    //             imu_state_->orientation.y, 
+    //             imu_state_->orientation.z, 
+    //             imu_state_->orientation.w);
+
+    RCLCPP_INFO(get_logger(), out.str().c_str());
+    // model_.run();
+    // auto output = "Control loop" + std::to_string(model_.output_buffer_[0]);
   }
 
   private: 
 
     //ros2 interfaces 
+    rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sub_;
     rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub_;
     
@@ -94,7 +140,15 @@ int main(int argc, char *argv[]) {
   std::cout << "Controller Node Started " << std::endl;
 
   rclcpp::init(argc, argv);
-  std::string model_path = "./Twip.pth.onnx";
+
+  char cwd[PATH_MAX];
+  if(getcwd(cwd, sizeof(cwd)) != nullptr){
+    std::cout << "Current Working directory is : " << cwd << std::endl;
+  }else{
+    perror("ERROR getting cwd");
+  }
+
+  std::string model_path = "src/controller/Twip.pth.onnx";
   int num_observations = 2;
   int num_actions =1;
   auto controller = std::make_shared<Controller>(model_path, num_observations,num_actions);
