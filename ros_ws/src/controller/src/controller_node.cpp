@@ -12,7 +12,7 @@
 
 #include "std_msgs/msg/int32.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "./../include/onnx_controller.cpp"
+#include "controler/include/onnx_handler"
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
