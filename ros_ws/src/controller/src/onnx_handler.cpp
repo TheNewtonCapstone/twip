@@ -1,4 +1,5 @@
-#include "controller/include/onnx_handler.hpp"
+#include "../include/onnx_handler.hpp"
+
 
 OnnxHandler::OnnxHandler(const std::string _path, const int _num_inputs, const int _num_ouputs)
     : path(_path), num_inputs(_num_inputs), num_outputs(_num_ouputs)
@@ -35,7 +36,7 @@ OnnxHandler::OnnxHandler(const std::string _path, const int _num_inputs, const i
       memory_info, output_buffer.data(), output_buffer.size(), output_shape.data(),
       output_shape.size());
 
-  auto memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
+  
   std::cout << "Memory information : \n"
             << memory_info << std::endl;
 
@@ -55,11 +56,11 @@ int OnnxHandler::run()
     int num_input_tensors = 1;
     int num_output_tensors = 1;
 
-    auto result = session.Run(opt,
-                              input_names, &input_tensor, num_input_tensors,
-                              output_names, &output_tensor, num_output_tensors);
-    if (result != nullptr)
-      throw Ort::Exception(result, "Error running the model");
+    session.Run(opt,
+                input_names, &input_tensor, num_input_tensors,
+                output_names, &output_tensor, num_output_tensors);
+    // if (result != nullptr)
+    //   throw ort::exception(result, "error running the model");
 
     return 0;
   }
@@ -81,11 +82,11 @@ int OnnxHandler::run()
 
   return 0;
 }
-const std::vector<float> &OnnxHandler::get_input_buffer() const
+std::vector<float> &OnnxHandler::get_input_buffer() 
 {
   return input_buffer;
 }
-const std::vector<float> &OnnxHandler::get_output_buffer() const
+std::vector<float> &OnnxHandler::get_output_buffer() 
 {
   return output_buffer;
 }

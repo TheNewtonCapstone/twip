@@ -22,7 +22,7 @@ include_directories(
 link_directories("${ONNXRUNTIME_BIN_DIR}/")
 
 
-add_executable(controller src/controller_node.cpp)
+add_executable(controller src/controller_node.cpp src/onnx_handler.cpp)
 target_link_libraries(controller
   onnxruntime
 )

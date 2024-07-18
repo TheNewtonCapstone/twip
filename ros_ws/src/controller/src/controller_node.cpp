@@ -12,7 +12,7 @@
 
 #include "std_msgs/msg/int32.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "controler/include/onnx_handler"
+#include "../include/onnx_handler.hpp"
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
@@ -20,7 +20,7 @@ class Controller : public rclcpp::Node {
 public:
   Controller(const std::string model_path, const int num_observations, const int num_actions) 
     :Node("controller"), 
-    model(modelpath, num_observations, num_actions){
+    model(model_path, num_observations, num_actions){
     // create ros2 messages 
     imu_state = std::make_shared<sensor_msgs::msg::Imu>();
 
@@ -41,8 +41,7 @@ public:
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
      imu_state = std::move(msg);
 
-    // Log the IMU state
-    // RCLCPP_INFO(get_logger(), "IMU values:");
+    // Log the IMU state RCLCPP_INFO(get_logger(), "IMU values:");
     // RCLCPP_INFO(get_logger(), "Orientation - x: %f, y: %f, z: %f, w: %f", 
     //             imu_state->orientation.x, 
     //             imu_state->orientation.y, 
@@ -50,7 +49,21 @@ public:
     //             imu_state->orientation.w);
   }
   void control_loop(){
-    std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
+    // std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
+
+    // std::copy(&imu_state->orientation.x, &imu_state->orientation.x+4, model.get_input_buffer().begin());
+     auto& input_buffer = model.get_input_buffer();
+
+    // Ensure the buffer has the correct size
+    if (input_buffer.size() >= 4) {
+        input_buffer[0] = imu_state->orientation.x;
+        input_buffer[1] = imu_state->orientation.y;
+        input_buffer[2] = imu_state->orientation.z;
+        input_buffer[3] = imu_state->orientation.w;
+    } else {
+        
+        RCLCPP_ERROR(get_logger(), "Input buffer size is too small!");
+    }
     model.run();
 
 
@@ -100,7 +113,7 @@ public:
     int num_observations;
     int num_actions;
     std::string model_path;
-    OnnxController model;
+    OnnxHandler model;
 
 };
 
@@ -148,7 +161,7 @@ int main(int argc, char *argv[]) {
   }
 
   std::string modelpath = "src/controller/Twip.pth.onnx";
-  int num_observations = 2;
+  int num_observations = 4;
   int num_actions =1;
   auto controller = std::make_shared<Controller>(modelpath, num_observations,num_actions);
 
