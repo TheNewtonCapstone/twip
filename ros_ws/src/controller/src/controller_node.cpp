@@ -20,13 +20,13 @@ class Controller : public rclcpp::Node {
 public:
   Controller(const std::string model_path, const int num_observations, const int num_actions) 
     :Node("controller"), 
-    model_(model_path, num_observations, num_actions){
+    model(modelpath, num_observations, num_actions){
     // create ros2 messages 
-    imu_state_ = std::make_shared<sensor_msgs::msg::Imu>();
+    imu_state = std::make_shared<sensor_msgs::msg::Imu>();
 
     RCLCPP_INFO(get_logger(), "Imu initialized");
 
-    sub_ = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
+    sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
               std::bind(&Controller::imu_callback,this, std::placeholders::_1));
 
 
@@ -34,74 +34,73 @@ public:
 
   
   // initliase control loop timer
- timer_ =  create_wall_timer(5ms, std::bind(&Controller::control_loop, this));
+ timer =  create_wall_timer(5ms, std::bind(&Controller::control_loop, this));
 
   }
 
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
-     imu_state_ = std::move(msg);
+     imu_state = std::move(msg);
 
     // Log the IMU state
     // RCLCPP_INFO(get_logger(), "IMU values:");
     // RCLCPP_INFO(get_logger(), "Orientation - x: %f, y: %f, z: %f, w: %f", 
-    //             imu_state_->orientation.x, 
-    //             imu_state_->orientation.y, 
-    //             imu_state_->orientation.z, 
-    //             imu_state_->orientation.w);
+    //             imu_state->orientation.x, 
+    //             imu_state->orientation.y, 
+    //             imu_state->orientation.z, 
+    //             imu_state->orientation.w);
   }
   void control_loop(){
-    std::copy(&imu_state_->orientation.x,&imu_state_->orientation.x+4,model_.input_buffer_.begin());
-    model_.run();
-    auto output = model_.output_buffer_;
+    std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
+    model.run();
 
 
     std::ostringstream out;
     out << "Control loop :\n";
     out << "Imu Quaternion Values\t" 
-        << imu_state_->orientation.x << " "
-        << imu_state_->orientation.y << " " 
-        << imu_state_->orientation.z << " " 
-        << imu_state_->orientation.w;
+        << imu_state->orientation.x << " "
+        << imu_state->orientation.y << " " 
+        << imu_state->orientation.z << " " 
+        << imu_state->orientation.w;
  
 
 
 
     out << "\nINPUTS:\t";
-    for(auto element : model_.get_input_buffer()){ 
+    for(auto element : model.get_input_buffer()){ 
       out << element << " ";
     }
     out << "\nOUTPUTS\t";
-    for(auto element : model_.get_output_buffer()){
+    for(auto element : model.get_output_buffer()){
       out << element << " ";
     }
     out << std::endl;
 
 
     // RCLCPP_INFO(get_logger(), "Control loop - x: %f, y: %f, z: %f, w: %f", 
-    //             imu_state_->orientation.x, 
-    //             imu_state_->orientation.y, 
-    //             imu_state_->orientation.z, 
-    //             imu_state_->orientation.w);
+    //             imu_state->orientation.x, 
+    //             imu_state->orientation.y, 
+    //             imu_state->orientation.z, 
+    //             imu_state->orientation.w);
 
     RCLCPP_INFO(get_logger(), out.str().c_str());
-    // model_.run();
-    // auto output = "Control loop" + std::to_string(model_.output_buffer_[0]);
+    // model.run();
+    // auto output = "Control loop" + std::to_string(model.output_buffer_[0]);
   }
 
   private: 
 
     //ros2 interfaces 
-    rclcpp::TimerBase::SharedPtr timer_;
-    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sub_;
-    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub_;
+    rclcpp::TimerBase::SharedPtr timer;
+    rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sub;
+    rclcpp::Publisher<sensor_msgs::msg::JointState>::SharedPtr pub;
     
     //ros2 messages
-    sensor_msgs::msg::Imu::SharedPtr imu_state_;
-    std::array<float, 4> imu_quaternion_;
-    int num_observations_;
-    int num_actions_;
-    std::string model_path_;
-    OnnxController model_;
+    sensor_msgs::msg::Imu::SharedPtr imu_state;
+    std::array<float, 4> imu_quaternion;
+    int num_observations;
+    int num_actions;
+    std::string model_path;
+    OnnxController model;
 
 };
 
@@ -148,10 +147,10 @@ int main(int argc, char *argv[]) {
     perror("ERROR getting cwd");
   }
 
-  std::string model_path = "src/controller/Twip.pth.onnx";
+  std::string modelpath = "src/controller/Twip.pth.onnx";
   int num_observations = 2;
   int num_actions =1;
-  auto controller = std::make_shared<Controller>(model_path, num_observations,num_actions);
+  auto controller = std::make_shared<Controller>(modelpath, num_observations,num_actions);
 
   set_real_time_priority(controller);
 
