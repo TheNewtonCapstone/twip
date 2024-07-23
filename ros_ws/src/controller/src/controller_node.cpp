@@ -4,6 +4,7 @@
 #include <iostream>
 #include "rclcpp/rclcpp.hpp"
 #include <cstdio>
+#include <cmath>
 
 #include <sensor_msgs/msg/joint_state.hpp>
 
@@ -20,11 +21,14 @@ class Controller : public rclcpp::Node {
 public:
   Controller(const std::string model_path, const int num_observations, const int num_actions) 
     :Node("controller"), 
-    model(model_path, num_observations, num_actions){
+    model(model_path, num_observations, num_actions),
+    last_time(this->now()){
     // create ros2 messages 
     imu_state = std::make_shared<sensor_msgs::msg::Imu>();
     motor_command.name = {"left_motor","right_motor"};
     motor_command.velocity = {0,0};
+    last_actions = {0.0,0.0};
+    last_yaw = 0.0;
     RCLCPP_INFO(get_logger(), "Imu initialized");
 
     sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
@@ -37,19 +41,12 @@ public:
 
   
   // initliase control loop timer
- timer =  create_wall_timer(5ms, std::bind(&Controller::control_loop, this));
+ timer =  create_wall_timer(100ms, std::bind(&Controller::control_loop, this));
 
   }
 
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
      imu_state = std::move(msg);
-
-    // Log the IMU state RCLCPP_INFO(get_logger(), "IMU values:");
-    // RCLCPP_INFO(get_logger(), "Orientation - x: %f, y: %f, z: %f, w: %f", 
-    //             imu_state->orientation.x, 
-    //             imu_state->orientation.y, 
-    //             imu_state->orientation.z, 
-    //             imu_state->orientation.w);
   }
   void control_loop(){
     // std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
@@ -57,13 +54,23 @@ public:
     // std::copy(&imu_state->orientation.x, &imu_state->orientation.x+4, model.get_input_buffer().begin());
 
      auto& input_buffer = model.get_input_buffer();
+    
+    float roll = quat_to_roll(
+      imu_state->orientation.x,
+      imu_state->orientation.y,
+      imu_state->orientation.z,
+      imu_state->orientation.w
+    );
+
+    calculate_angular_vel();
+    
 
     // Ensure the buffer has the correct size
     if (input_buffer.size() >= 4) {
-        input_buffer[0] = imu_state->orientation.x;
-        input_buffer[1] = imu_state->orientation.y;
-        input_buffer[2] = imu_state->orientation.z;
-        input_buffer[3] = imu_state->orientation.w;
+        input_buffer[0] = roll; 
+        input_buffer[1] = yaw_velocity;
+        input_buffer[2] = last_actions[0];
+        input_buffer[3] = last_actions[1];
     } else {
         
         RCLCPP_ERROR(get_logger(), "Input buffer size is too small!");
@@ -91,24 +98,46 @@ public:
       out << element << " ";
     }
     out << std::endl;
+    
+    
+    last_actions[0] = model.get_output_buffer().at(0);
+    last_actions[1] = model.get_output_buffer().at(1);
 
     motor_command.header.stamp = get_clock()->now();
-    motor_command.velocity = {model.get_output_buffer().at(0), model.get_output_buffer().at(1)};
+    motor_command.effort = {model.get_output_buffer().at(0), model.get_output_buffer().at(1)};
     pub->publish(motor_command);
 
 
-
-    // RCLCPP_INFO(get_logger(), "Control loop - x: %f, y: %f, z: %f, w: %f", 
-    //             imu_state->orientation.x, 
-    //             imu_state->orientation.y, 
-    //             imu_state->orientation.z, 
-    //             imu_state->orientation.w);
-
     RCLCPP_INFO(get_logger(), out.str().c_str());
-    // model.run();
-    // auto output = "Control loop" + std::to_string(model.output_buffer_[0]);
   }
 
+  float quat_to_roll(float x, float y, float z, float w){
+    return std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+  }
+
+  float quat_to_yaw(float x, float y, float z, float w) {
+    return std::atan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z));
+  }
+
+  // Calculate the angular velocity around yaw
+  void calculate_angular_vel() {
+    float current_yaw = quat_to_yaw(
+      imu_state->orientation.x,
+      imu_state->orientation.y,
+      imu_state->orientation.z,
+      imu_state->orientation.w
+    );
+
+    float dt = (get_clock()->now() - last_time).seconds();
+    yaw_velocity = (current_yaw - last_yaw) / dt;
+
+    last_yaw = current_yaw;
+    last_time = get_clock()->now();
+
+    // RCLCPP_INFO(get_logger(), "CURRENT YAW %f", current_yaw);
+    // RCLCPP_INFO(get_logger(), "Last yaw %f", last_yaw);
+    // RCLCPP_INFO(get_logger(), "Yaw velocity: %f rad/s", yaw_velocity);
+  }
   private: 
 
     //ros2 interfaces 
@@ -124,6 +153,11 @@ public:
     int num_actions;
     std::string model_path;
     OnnxHandler model;
+
+    float last_yaw;
+    float yaw_velocity;
+    rclcpp::Time last_time;
+    std::array<float,2> last_actions;
 
 };
 
