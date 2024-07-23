@@ -23,14 +23,17 @@ public:
     model(model_path, num_observations, num_actions){
     // create ros2 messages 
     imu_state = std::make_shared<sensor_msgs::msg::Imu>();
-
+    motor_command.name = {"left_motor","right_motor"};
+    motor_command.velocity = {0,0};
     RCLCPP_INFO(get_logger(), "Imu initialized");
 
     sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
               std::bind(&Controller::imu_callback,this, std::placeholders::_1));
 
+    RCLCPP_INFO(get_logger(), "ROS imu subscriber created ");
 
-    RCLCPP_INFO(get_logger(), "1113 ROS imu subscriber succesffuly created ");
+    pub = create_publisher<sensor_msgs::msg::JointState>("motor_command", 10);
+    RCLCPP_INFO(get_logger(), "ROS motor commands publisher created ");
 
   
   // initliase control loop timer
@@ -52,6 +55,7 @@ public:
     // std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
 
     // std::copy(&imu_state->orientation.x, &imu_state->orientation.x+4, model.get_input_buffer().begin());
+
      auto& input_buffer = model.get_input_buffer();
 
     // Ensure the buffer has the correct size
@@ -88,6 +92,11 @@ public:
     }
     out << std::endl;
 
+    motor_command.header.stamp = get_clock()->now();
+    motor_command.velocity = {model.get_output_buffer().at(0), model.get_output_buffer().at(1)};
+    pub->publish(motor_command);
+
+
 
     // RCLCPP_INFO(get_logger(), "Control loop - x: %f, y: %f, z: %f, w: %f", 
     //             imu_state->orientation.x, 
@@ -109,6 +118,7 @@ public:
     
     //ros2 messages
     sensor_msgs::msg::Imu::SharedPtr imu_state;
+    sensor_msgs::msg::JointState motor_command; 
     std::array<float, 4> imu_quaternion;
     int num_observations;
     int num_actions;
@@ -162,7 +172,7 @@ int main(int argc, char *argv[]) {
 
   std::string modelpath = "src/controller/Twip.pth.onnx";
   int num_observations = 4;
-  int num_actions =1;
+  int num_actions =2;
   auto controller = std::make_shared<Controller>(modelpath, num_observations,num_actions);
 
   set_real_time_priority(controller);
