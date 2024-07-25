@@ -40,9 +40,8 @@ public:
     RCLCPP_INFO(get_logger(), "ROS motor commands publisher created ");
 
   
-  // initliase control loop timer
- timer =  create_wall_timer(100ms, std::bind(&Controller::control_loop, this));
-
+    // initliase control loop timer
+    timer =  create_wall_timer(100ms, std::bind(&Controller::control_loop, this));
   }
 
   void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
@@ -72,7 +71,6 @@ public:
         input_buffer[2] = last_actions[0];
         input_buffer[3] = last_actions[1];
     } else {
-        
         RCLCPP_ERROR(get_logger(), "Input buffer size is too small!");
     }
     model.run();
