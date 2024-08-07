@@ -1,81 +1,62 @@
-#include <sstream>
-#include <unistd.h>
-#include <limits.h>
-#include <iostream>
-#include "rclcpp/rclcpp.hpp"
-#include <cstdio>
-#include <cmath>
+#include "../include/controller_node.hpp"
 
-#include <sensor_msgs/msg/joint_state.hpp>
 
-#include "sensor_msgs/msg/imu.hpp"
-#include "sensor_msgs/msg/joint_state.hpp"
-
-#include "std_msgs/msg/int32.hpp"
-#include "std_msgs/msg/string.hpp"
-#include "../include/onnx_handler.hpp"
 
 using std::placeholders::_1;
 using namespace std::chrono_literals;
-class Controller : public rclcpp::Node {
-public:
-  Controller(const std::string model_path, const int num_observations, const int num_actions) 
-    :Node("controller"), 
-    model(model_path, num_observations, num_actions),
-    last_time(this->now()){
-    // create ros2 messages 
-    imu_state = std::make_shared<sensor_msgs::msg::Imu>();
-    motor_command.name = {"left_motor","right_motor"};
-    motor_command.velocity = {0,0};
-    last_actions = {0.0,0.0};
-    last_yaw = 0.0;
-    RCLCPP_INFO(get_logger(), "Imu initialized");
+
+ControllerNode::ControllerNode(const std::string model_path, const int num_observations, const int num_actions)
+  :Node("Controller Node"),
+  model(model_path, num_observations, num_actions), 
+  last_time(this->now()),
+  prev_yaw(.0f, .0f),
+  prev_actions({.0f, .0f}){ 
 
     sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
               std::bind(&Controller::imu_callback,this, std::placeholders::_1));
 
-    RCLCPP_INFO(get_logger(), "ROS imu subscriber created ");
-
     pub = create_publisher<sensor_msgs::msg::JointState>("motor_cmd", 10);
-    RCLCPP_INFO(get_logger(), "ROS motor commands publisher created ");
-
   
-    // initliase control loop timer
+    // initilize control loop timer
     timer =  create_wall_timer(100ms, std::bind(&Controller::control_loop, this));
+    
+    imu_state = std::make_shared<sensor_msgs::msg::Imu>();
+    motor_command = std::make_shared<sensor_msgs::msg::JointState();
+
+    motor_command.name = {"left_motor","right_motor"};
+    motor_command.effort = {.0f,.0f};
   }
 
-  void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
-     imu_state = std::move(msg);
-  }
-  void control_loop(){
-    // std::copy(&imu_state->orientation.x,&imu_state->orientation.x+4,model.input_buffer_.begin());
 
-    // std::copy(&imu_state->orientation.x, &imu_state->orientation.x+4, model.get_input_buffer().begin());
+void ControllerNode::control_loop(){
 
      auto& input_buffer = model.get_input_buffer();
-    
-    float roll = quat_to_roll(
-      imu_state->orientation.x,
-      imu_state->orientation.y,
-      imu_state->orientation.z,
-      imu_state->orientation.w
-    );
 
-    calculate_angular_vel();
+    // get the roll
+    auto x = imu_state->orientation.x;
+    auto y = imu_state->orientation.y;
+    auto z = imu_state->orientation.z;
+    auto w = imu_state->orientation.w;
+    float roll =  std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+
     
 
-    // Ensure the buffer has the correct size
-    if (input_buffer.size() >= 4) {
-        input_buffer[0] = roll; 
-        input_buffer[1] = yaw_velocity;
-        input_buffer[2] = last_actions[0];
-        input_buffer[3] = last_actions[1];
-    } else {
-        RCLCPP_ERROR(get_logger(), "Input buffer size is too small!");
-    }
+    // calculate the angular velocity 
+    // multiple methods can be choosen. 
+    float curr_yaw = std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+    float dt = (get_clock()->now() - last_time).seconds();
+    float angular_vel = (curr_yaw - prev_yaw) / dt;
+
+
+    //load input in the input buffer
+    input_buffer[0] = roll; 
+    input_buffer[1] = yaw_velocity;
+    input_buffer[2] = last_actions[0];
+    input_buffer[3] = last_actions[1];
+
     model.run();
 
-
+    //display the results 
     std::ostringstream out;
     out << "Control loop :\n";
     out << "Imu Quaternion Values\t" 
@@ -83,9 +64,6 @@ public:
         << imu_state->orientation.y << " " 
         << imu_state->orientation.z << " " 
         << imu_state->orientation.w;
- 
-
-
 
     out << "\nINPUTS:\t";
     for(auto element : model.get_input_buffer()){ 
@@ -101,12 +79,20 @@ public:
     last_actions[0] = model.get_output_buffer().at(0);
     last_actions[1] = model.get_output_buffer().at(1);
 
+    last_yaw = current_yaw;
+    last_time = get_clock()->now();
+
+
     motor_command.header.stamp = get_clock()->now();
     motor_command.effort = {model.get_output_buffer().at(0), model.get_output_buffer().at(1)};
     pub->publish(motor_command);
 
 
     RCLCPP_INFO(get_logger(), out.str().c_str());
+  }
+
+  void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
+     imu_state = std::move(msg);
   }
 
   float quat_to_roll(float x, float y, float z, float w){
