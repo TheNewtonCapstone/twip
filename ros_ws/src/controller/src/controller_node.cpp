@@ -36,7 +36,7 @@ public:
 
     RCLCPP_INFO(get_logger(), "ROS imu subscriber created ");
 
-    pub = create_publisher<sensor_msgs::msg::JointState>("motor_command", 10);
+    pub = create_publisher<sensor_msgs::msg::JointState>("motor_cmd", 10);
     RCLCPP_INFO(get_logger(), "ROS motor commands publisher created ");
 
   
