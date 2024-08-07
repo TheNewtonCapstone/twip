@@ -4,6 +4,11 @@ function run_agent(){
     docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble serial --dev /dev/ttyUSB0 -v6
 }
 
+function run_agent_wifi(){
+    docker run -it --rm --net=host -v /dev/shm/:/dev/shm  --privileged -v /dev:/dev microros/micro-ros-agent:humble udp4 --port 8888 -v6
+}
+
+
 # run onnx container
 function run_onnx()
 {
