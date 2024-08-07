@@ -1,9 +1,37 @@
 #include "../include/onnx_handler.hpp"
 
-
 OnnxHandler::OnnxHandler(const std::string _path, const int _num_inputs, const int _num_ouputs)
-    : path(_path), num_inputs(_num_inputs), num_outputs(_num_ouputs)
-{
+    : path(_path), num_inputs(_num_inputs), num_outputs(_num_ouputs){
+
+  init_onnx_session();
+
+  // shape specifies the dimensions of the input/output sensor
+  input_shape = {num_inputs};
+  output_shape = {num_outputs};
+
+  input_buffer = std::vector<float>(_num_inputs);
+  output_buffer = std::vector<float>(_num_ouputs);
+
+  auto memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
+
+  input_tensor = Ort::Value::CreateTensor<float>(
+      memory_info, input_buffer.data(), input_buffer.size(), input_shape.data(),
+      input_shape.size());
+
+  output_tensor = Ort::Value::CreateTensor<float>(
+      memory_info, output_buffer.data(), output_buffer.size(), output_shape.data(),
+      output_shape.size());
+
+  std::cout << "Memory information : \n"
+            << memory_info << std::endl;
+
+  std::cout << "Input and output buffers have been initiliazed!\n"
+            << "Address of the controller :\t" << memory_info << std::endl
+            << "Input tensor " << input_tensor << "\t tensor size: " << input_buffer.size() << std::endl
+            << "Output tensor " << output_tensor << "\t tensor size: " << output_buffer.size() << std::endl;
+}
+
+void OnnxHandler::init_onnx_session(){
 
   // onnx runtime sessions options
   Ort::SessionOptions options;
@@ -20,73 +48,25 @@ OnnxHandler::OnnxHandler(const std::string _path, const int _num_inputs, const i
 
   // create session
   session = Ort::Session{env, path.c_str(), options};
-
-  input_shape = {num_inputs};
-  output_shape = {num_outputs};
-
-  input_buffer = std::vector<float>(_num_inputs);
-  output_buffer = std::vector<float>(_num_ouputs);
-  auto memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
-
-  input_tensor = Ort::Value::CreateTensor<float>(
-      memory_info, input_buffer.data(), input_buffer.size(), input_shape.data(),
-      input_shape.size());
-
-  output_tensor = Ort::Value::CreateTensor<float>(
-      memory_info, output_buffer.data(), output_buffer.size(), output_shape.data(),
-      output_shape.size());
-
-  
-  std::cout << "Memory information : \n"
-            << memory_info << std::endl;
-
-  std::cout << "Input and output buffers have been initiliazed!\n"
-            << "Address of the controller :\t" << memory_info << std::endl
-            << "Input tensor " << input_tensor << "\t tensor size: " << input_buffer.size() << std::endl
-            << "Output tensor " << output_tensor << "\t tensor size: " << output_buffer.size() << std::endl;
 }
 
-int OnnxHandler::run()
-{
-  try
-  {
-    const char *input_names[] = {"observations"};
-    const char *output_names[] = {"actions"};
+void OnnxHandler::run(){
+    // onnx requires a pointer to an array of char
+    const char *input_name[] = {INPUT_NAME};
+    const char *output_name[] = {OUTPUT_NAME};
 
     int num_input_tensors = 1;
     int num_output_tensors = 1;
 
     session.Run(opt,
-                input_names, &input_tensor, num_input_tensors,
-                output_names, &output_tensor, num_output_tensors);
-    // if (result != nullptr)
-    //   throw ort::exception(result, "error running the model");
-
-    return 0;
-  }
-  catch (const Ort::Exception &e)
-  {
-    RCLCPP_ERROR(rclcpp::get_logger("OnnxController"), "Error in run: %s", e.what());
-    return -1;
-  }
-
-  const char *input_names[] = {"observations"};
-  const char *output_names[] = {"actions"};
-
-  int num_input_tensors = 1;
-  int num_output_tensors = 1;
-
-  session.Run(opt,
-              input_names, &input_tensor, num_input_tensors,
-              output_names, &output_tensor, num_output_tensors);
-
-  return 0;
+                         input_name, &input_tensor, num_input_tensors,
+                         output_name, &output_tensor, num_output_tensors);
 }
-std::vector<float> &OnnxHandler::get_input_buffer() 
+std::vector<float> &OnnxHandler::get_input_buffer()
 {
   return input_buffer;
 }
-std::vector<float> &OnnxHandler::get_output_buffer() 
+std::vector<float> &OnnxHandler::get_output_buffer()
 {
   return output_buffer;
 }

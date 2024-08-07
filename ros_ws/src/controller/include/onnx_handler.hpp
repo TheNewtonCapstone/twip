@@ -10,11 +10,16 @@
 class OnnxHandler{
     public:
         OnnxHandler(const std::string _path, const int _num_inputs, const int _num_outputs);
-        int run(); 
+        void run(); 
+        void init_onnx_session();
         std::vector<float>& get_input_buffer();
         std::vector<float>& get_output_buffer();      
 
     private:
+
+        static constexpr const char* INPUT_NAME = "observations";
+        static constexpr const char* OUTPUT_NAME = "actions";
+
         std::string path;
         int num_inputs;
         int num_outputs;
@@ -25,7 +30,8 @@ class OnnxHandler{
 
     
         Ort::Value input_tensor{nullptr};
-        std::array<int64_t, 1> input_shape;  // use of an array is required by the CreateTensor() function
+        // shape specifies the dimensions of the input/output sensor
+        std::array<int64_t, 1> input_shape;
         std::vector<float> input_buffer;
     
 
