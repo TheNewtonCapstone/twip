@@ -17,9 +17,8 @@
 
 class ControllerNode : public rclcpp::Node{
     public:
+        ControllerNode(const std::string, const int, const int);
 
-        void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg);
-        void control_loop();
     private:
         rclcpp::TimerBase::SharedPtr timer;
         rclcpp::Subscription<sensor_msgs::msg::Imu>::SharedPtr sub;
@@ -27,13 +26,15 @@ class ControllerNode : public rclcpp::Node{
         
         //ros2 messages
         sensor_msgs::msg::Imu::SharedPtr imu_state;
-        sensor_msgs::msg::JointState motor_command; 
-
+        sensor_msgs::msg::JointState motor_cmd; 
         OnnxHandler model;
 
         rclcpp::Time last_time;
-        float prev_yaw;
-        std::array<float,2> prev_actions;
 
-}
+        float prev_yaw = .0f;
+        std::array<float,2> prev_actions = {.0f, .0f};
+
+        void control_loop();
+        void imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg);
+};
 
