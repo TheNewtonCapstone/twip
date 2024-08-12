@@ -6,7 +6,7 @@ using std::placeholders::_1;
 using namespace std::chrono_literals;
 
 ControllerNode::ControllerNode(const std::string model_path, const int num_observations, const int num_actions)
-  :Node("ControllerNode Node"),
+  :Node("controller"),
   model(model_path, num_observations, num_actions), 
   last_time(this->now()) { 
 
@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
     perror("ERROR getting cwd");
   }
 
-  std::string modelpath = "src/controller/Twip.pth.onnx";
+  std::string modelpath = "src/controller/twip.pth.onnx";
   int num_observations = 4;
   int num_actions =2;
   auto controller = std::make_shared<ControllerNode>(modelpath, num_observations,num_actions);
