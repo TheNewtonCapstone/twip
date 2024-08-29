@@ -1,0 +1,4748 @@
+ControllerNode Node Started 
+Current Working directory is : /home/ros_ws
+Memory information : 
+0xaaab02b89340
+Input and output buffers have been initiliazed!
+Address of the controller :	0xaaab02b89340
+Input tensor 0xaaab03495aa0	 tensor size: 4
+Output tensor 0xaaab02d40ee0	 tensor size: 2
+Control loop :
+Time step : 	0.00723964
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0 0 
+OUTPUTS	0.0708564 0.0692371 
+
+Control loop :
+Time step : 	0.000432744
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0708564 0.0692371 
+OUTPUTS	0.0508869 0.0502037 
+
+Control loop :
+Time step : 	0.00156556
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0508869 0.0502037 
+OUTPUTS	0.0559931 0.0549623 
+
+Control loop :
+Time step : 	0.00463848
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0559931 0.0549623 
+OUTPUTS	0.0546832 0.0537159 
+
+Control loop :
+Time step : 	0.00413434
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0546832 0.0537159 
+OUTPUTS	0.0550223 0.0540349 
+
+Control loop :
+Time step : 	0.00464171
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0550223 0.0540349 
+OUTPUTS	0.0549352 0.0539524 
+
+Control loop :
+Time step : 	0.00465707
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549352 0.0539524 
+OUTPUTS	0.0549577 0.0539736 
+
+Control loop :
+Time step : 	0.00408436
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549577 0.0539736 
+OUTPUTS	0.0549519 0.0539681 
+
+Control loop :
+Time step : 	0.00457278
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549519 0.0539681 
+OUTPUTS	0.0549534 0.0539695 
+
+Control loop :
+Time step : 	0.00122645
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549534 0.0539695 
+OUTPUTS	0.054953 0.0539692 
+
+Control loop :
+Time step : 	0.000581066
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.054953 0.0539692 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000301989
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00235962
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447505
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00398765
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00437198
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00158857
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000343237
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00431124
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00435825
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00212199
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00433146
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00176224
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000316709
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000523209
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00307224
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00434638
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00374153
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0043435
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00211495
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000247972
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0037959
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439902
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00432708
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00376326
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00178576
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121368
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00164649
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00431614
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439044
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00171897
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00198266
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00176845
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000255076
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00212084
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441518
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442446
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00167593
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00146217
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00334518
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000291653
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00348675
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0043595
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00435294
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00159356
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00139654
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00383635
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000928911
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439281
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441473
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000525897
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000850766
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00168067
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000244741
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00282337
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441403
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00436155
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0010829
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00193632
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00367581
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000326726
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00437227
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044907
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000305381
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00031943
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121612
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445291
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00163708
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00433911
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438631
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00037991
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000874382
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00437588
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000247589
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00265396
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00424052
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00155817
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000892815
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000271236
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00249019
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0019351
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00436202
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439601
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000437159
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00035415
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00254753
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044675
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0038159
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444164
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00163936
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000665548
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000237444
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00338492
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443755
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00389226
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447191
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00210007
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000248036
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00249697
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445947
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00183926
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441367
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00199114
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000323494
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000364327
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00350323
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440503
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00366371
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442126
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00197002
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000264804
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00370403
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445076
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444788
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00382163
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0017119
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.001151
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00190125
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445784
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447035
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00216724
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00185923
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00158819
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000277413
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00393661
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445566
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445252
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0017103
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00152579
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00345324
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000321478
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00429927
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00452478
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445236
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0016576
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00143474
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00400048
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0020049
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441886
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448667
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000355334
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00100878
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00182317
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000255333
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00257704
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447076
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449768
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000358022
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121023
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0023106
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000292069
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00345734
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444417
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440103
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00134607
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0014814
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445364
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00197639
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445931
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443748
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000358822
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000307045
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00280437
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000260548
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00279906
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448318
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449182
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00149187
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00147539
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448052
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000417959
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00351734
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448481
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000347654
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000671915
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00170265
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448423
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00164566
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445854
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446817
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000248676
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000392583
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0045124
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000345414
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00234231
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445924
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00118092
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000460071
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0002353
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00407959
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00209952
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444097
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445886
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000283429
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00263233
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443172
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0045274
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00178681
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044131
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00122757
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00025466
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0015175
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445019
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448884
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391795
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000714412
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00152972
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000256132
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00179683
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440276
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00180246
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440503
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00203559
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000456007
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00218442
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446056
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446481
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00383722
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00102331
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00187075
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000312581
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.003812
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449105
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446628
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000933424
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00175344
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00377834
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0011782
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443185
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445956
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00045348
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00112664
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00188115
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000287653
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00254321
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00433095
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00462443
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00184726
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00163228
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00363357
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000311109
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00390816
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445006
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449617
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00195319
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00171811
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00394407
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00101765
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044059
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448088
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000413831
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000352038
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000992976
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000250084
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00264715
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446984
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446209
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000952368
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00181718
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00393034
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000448296
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00380678
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448411
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000533577
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00079035
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00193811
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00457694
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00139596
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439547
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447723
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000542217
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000903791
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447518
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000293253
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00261873
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00451755
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00202634
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00133375
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000243108
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00297775
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00182582
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448548
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044682
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000560617
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000352646
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00389072
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444775
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00377728
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448184
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00178064
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00034231
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000838894
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00434206
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00466206
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00403994
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0019359
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00165084
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000388167
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396509
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438001
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00223431
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442446
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00188006
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000261732
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00365312
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446996
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448683
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391114
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00094648
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00166784
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000217923
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00336604
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044643
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443876
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00393354
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00119436
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00161993
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00220733
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444555
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0043754
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00222692
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00133474
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00109768
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000244325
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00241239
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443444
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445505
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00387616
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0012788
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00392864
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000309541
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00345631
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447191
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00467361
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00153628
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00131845
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00398003
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00166732
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445214
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444792
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000349446
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000972816
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00181827
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000267908
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00200723
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441316
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444343
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00120818
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00206419
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391207
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000344582
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00429246
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445454
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000539081
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000347558
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000944751
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447502
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121788
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439393
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00431198
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00036055
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000543657
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447166
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000273349
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00269944
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441102
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00143196
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000527721
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00108412
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441783
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000314373
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00413434
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446382
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000256197
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000343397
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00248718
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448673
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00359168
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444232
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00135932
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000678251
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000287205
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00243879
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445812
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00388986
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438551
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0019289
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000268964
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00206522
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447294
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00245393
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443159
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00125685
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000470535
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00035975
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0037641
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443415
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00361549
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044787
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00204835
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000270372
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00410346
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00451192
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450529
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00387254
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00133084
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00392957
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00183798
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443262
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444017
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00230263
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00141817
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00156716
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450638
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00267214
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439515
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448577
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00189069
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00169251
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00371152
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000428007
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00338745
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044531
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438164
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00205063
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00183293
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00404416
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00196349
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443643
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447128
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000380135
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00109701
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00191923
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000247268
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00329132
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450676
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444171
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121628
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0020321
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391818
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000287461
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00430078
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449143
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000367526
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00033575
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000655563
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450036
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00184576
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442299
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450228
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000485321
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000898863
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0036744
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000258565
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00282443
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449208
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00038279
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00039463
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000662123
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00434058
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000396647
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00363673
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439748
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000650923
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00149087
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000533801
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442571
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00394122
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438779
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000699276
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000380071
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0002345
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0017239
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448724
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00388864
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00434247
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00155475
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000297701
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00194333
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446632
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00228593
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441243
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00116044
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000499049
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000462792
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00219303
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444459
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00395831
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442987
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00186013
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000246596
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00345795
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00452696
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00451544
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00387447
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00132812
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0010612
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000232516
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00405636
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446856
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00228372
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445118
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00118338
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000250852
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0040025
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443668
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447233
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00392423
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00147234
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00150329
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00037319
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00375453
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439902
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444036
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00214458
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00192378
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396874
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00203037
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443499
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440084
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000368102
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00112699
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00196378
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000257893
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00258555
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444833
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444404
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00184886
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0016142
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00363923
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00023994
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00416017
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446846
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044579
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000686507
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00153283
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396211
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00110312
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442475
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439025
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000384006
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000932144
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00208295
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000253956
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00283797
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444043
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000398982
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000329446
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000492168
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440436
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000390759
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00365657
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449108
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000251172
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000388967
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00219354
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444916
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00397479
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439351
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00157718
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000362279
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000235587
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00352022
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00431754
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00386506
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00457688
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00164246
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000245092
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00461697
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446727
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00224218
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00437595
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121468
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000626667
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000354086
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396855
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444721
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00399239
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445435
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00197968
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00025898
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00399191
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446449
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443051
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0039321
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00112949
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00156262
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0021753
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442436
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440753
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0022602
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00167913
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00189741
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000272357
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00280322
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448433
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00433422
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00199558
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00179043
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00372621
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000332454
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00412916
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0044922
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442116
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00200477
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00179453
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396704
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00199101
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448638
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444312
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000301509
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00112856
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00195466
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000300357
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00335154
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00451028
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.004481
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00202448
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00179149
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00379757
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000292421
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391565
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00451121
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450836
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00132953
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00216548
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00394954
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00197514
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449896
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448587
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000361798
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000850863
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00203133
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000364103
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0024674
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440331
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00247291
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00121839
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00207431
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00391597
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000557193
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00452257
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449262
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000297925
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000308805
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449435
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447393
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0013807
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449649
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00124524
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000592074
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000435496
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00232081
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450417
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00398602
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449764
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.002081
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00061233
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00243998
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00449534
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00206272
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00447544
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00124405
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000567946
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000306534
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00396666
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448718
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00384771
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000994128
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00180176
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00033863
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00306847
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445294
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442129
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00373811
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00129634
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00393392
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00181273
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440459
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441182
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00226247
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00168227
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00182115
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000405703
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00236238
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00445112
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446785
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00191034
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00164707
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00356736
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000301701
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00390531
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443518
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446536
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00190774
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00164006
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00399847
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000341797
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00375101
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00437166
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000338437
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0011868
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00173673
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000502921
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00278245
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00456788
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00438292
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00100427
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00183242
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00373766
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00292927
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0043546
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00446872
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00448532
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00450027
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00319055
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00110434
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000396487
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000332134
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00036679
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000367942
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000389959
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000397127
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00467061
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00387696
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00409642
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00149577
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000360678
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0012877
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.004446
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0030222
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440785
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00114904
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00058113
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000391303
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00178771
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00442663
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00421521
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00349619
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0016168
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00231524
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000382758
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00408039
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439198
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00389191
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00213082
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00191514
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000465032
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00181629
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441319
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00298629
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00428631
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.0011316
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00107451
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00443553
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00361219
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00440071
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00416602
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000444775
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00152803
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00103186
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000361478
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00311887
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.004514
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00131449
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00095992
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00190147
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00395824
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00111682
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00441211
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00297042
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00134329
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00124956
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00439832
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00399056
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00311666
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00444929
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.00215831
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000804558
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
+Control loop :
+Time step : 	0.000344166
+Imu Quaternion Values	0 0 0 1 0
+INPUTS:	0 0 0.0549531 0.0539693 
+OUTPUTS	0.0549531 0.0539693 
+
