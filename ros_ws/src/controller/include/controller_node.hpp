@@ -30,6 +30,7 @@ class ControllerNode : public rclcpp::Node{
         OnnxHandler model;
 
         rclcpp::Time last_time;
+        rclcpp::Time last_call_back_time;
 
         float prev_yaw = .0f;
         std::array<float,2> prev_actions = {.0f, .0f};

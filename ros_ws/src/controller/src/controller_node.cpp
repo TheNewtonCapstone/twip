@@ -1,4 +1,5 @@
 #include "../include/controller_node.hpp"
+#include <iostream>
 
 
 
@@ -8,15 +9,17 @@ using namespace std::chrono_literals;
 ControllerNode::ControllerNode(const std::string model_path, const int num_observations, const int num_actions)
   :Node("controller"),
   model(model_path, num_observations, num_actions), 
-  last_time(this->now()) { 
+  last_time(this->now()),
+  last_call_back_time(this->now())
+  { 
 
-    sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 10, 
+    sub = create_subscription<sensor_msgs::msg::Imu>("imu_data", 1, 
               std::bind(&ControllerNode::imu_callback,this, std::placeholders::_1));
 
-    pub = create_publisher<sensor_msgs::msg::JointState>("motor_cmd", 10);
+    pub = create_publisher<sensor_msgs::msg::JointState>("motor_cmd", 1);
   
     // initilize control loop timer
-    timer =  create_wall_timer(100ms, std::bind(&ControllerNode::control_loop, this));
+    timer =  create_wall_timer(50ms, std::bind(&ControllerNode::control_loop, this));
     
     imu_state = std::make_shared<sensor_msgs::msg::Imu>();
 
@@ -25,31 +28,37 @@ ControllerNode::ControllerNode(const std::string model_path, const int num_obser
   }
 
   void ControllerNode::imu_callback(const sensor_msgs::msg::Imu::SharedPtr msg){
+     float dt  =(get_clock()->now() - last_call_back_time).seconds();
      imu_state = std::move(msg);
+    std::cout << "IMU callback time step : " <<  dt << std::endl;
+    last_time = get_clock()->now();
+    
   }
 
 
 void ControllerNode::control_loop(){
 
+    float dt = (get_clock()->now() - last_time).seconds();
     auto& input_buffer = model.get_input_buffer();
-
+    
     // get the roll
     auto x = imu_state->orientation.x;
     auto y = imu_state->orientation.y;
     auto z = imu_state->orientation.z;
     auto w = imu_state->orientation.w;
-    float roll =  std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+    auto angular_vel = imu_state->angular_velocity.z;
+    //float roll =  std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
+    float pitch = std::asin(2.f * (w * y - z * x));
 
     
 
     // calculate the instantenous angular velocity 
-    float curr_yaw = std::atan2(2 * (w * x + y * z), 1 - 2 * (x * x + y * y));
-    float dt = (get_clock()->now() - last_time).seconds();
-    float angular_vel = (curr_yaw - prev_yaw) / dt;
+    // float curr_yaw = std::atan2(2 * (w * z + y * x), 1 - 2 * (y * y + z * z));
+    // float angular_vel = (curr_yaw - prev_yaw) / dt;
 
 
     //load input buffer
-    input_buffer[0] = roll; 
+    input_buffer[0] = pitch; 
     input_buffer[1] = angular_vel;
     input_buffer[2] = prev_actions[0];
     input_buffer[3] = prev_actions[1];
@@ -59,11 +68,13 @@ void ControllerNode::control_loop(){
     //display the results 
     std::ostringstream out;
     out << "Control loop :\n";
-    out << "Imu Quaternion Values\t" 
+    out << "Time step : \t" << dt << "\n";
+    out << "Imu Quaternion Values\t"
         << imu_state->orientation.x << " "
         << imu_state->orientation.y << " " 
         << imu_state->orientation.z << " " 
-        << imu_state->orientation.w;
+        << imu_state->orientation.w << " "
+        << angular_vel;
 
     out << "\nINPUTS:\t";
     for(auto element : model.get_input_buffer()){ 
@@ -78,7 +89,7 @@ void ControllerNode::control_loop(){
     
   
     prev_actions = {model.get_output_buffer().at(0),model.get_output_buffer().at(1)};
-    prev_yaw = curr_yaw;
+    // prev_yaw = curr_yaw;
     last_time = get_clock()->now();
 
 
@@ -87,6 +98,7 @@ void ControllerNode::control_loop(){
     pub->publish(motor_cmd);
 
     RCLCPP_INFO(get_logger(), out.str().c_str());
+    std::cout << out.str() << std::endl; 
 }
 
 
@@ -133,7 +145,7 @@ int main(int argc, char *argv[]) {
     perror("ERROR getting cwd");
   }
 
-  std::string modelpath = "src/controller/twip.pth.onnx";
+  std::string modelpath = "src/controller/twip_1.1.0_hori.onnx";
   int num_observations = 4;
   int num_actions =2;
   auto controller = std::make_shared<ControllerNode>(modelpath, num_observations,num_actions);
