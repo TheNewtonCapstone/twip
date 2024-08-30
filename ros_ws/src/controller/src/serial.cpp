@@ -11,8 +11,8 @@
 #include <sys/ioctl.h> // Used for TCGETS2, which is required for custom baud rates
 #include <cassert>
 // #include <asm/termios.h> // Terminal control definitions (struct termios)
-#include <asm/ioctls.h>
-#include <asm/termbits.h>
+// #include <asm/ioctls.h>
+// #include <asm/termbits.h>
 #include <algorithm>
 #include <iterator>
 #include "../include/serial.hpp"
@@ -21,12 +21,11 @@
 
 
 
-Serial::Serial() {
+SerialPort::SerialPort() {
 }
 
-Serial::Serial(const std::string& file) {
-
-  echo = false;
+SerialPort::SerialPort(const std::string& file) {
+  echo = false; // disable echo mode 
   timeout_ms = default_timeout;
   read_buffer_size = read_buffer_size;
   read_buffer.reserve(read_buffer_size);
@@ -36,8 +35,7 @@ Serial::Serial(const std::string& file) {
     state = State::OPEN;
 
   // Create new termios struct, we call it 'tty' for convention
-  struct termios tty;
-
+  termios tty;    
   // Read in existing settings, and handle any error
   if (tcgetattr(m_serial_port, &tty) != 0) {
     printf("Error %i from tcgetattr: %s\n", errno, strerror(errno));
@@ -77,56 +75,33 @@ Serial::Serial(const std::string& file) {
   }
 }
 
-int Serial::set_baudrate(Baudrate baudrate) {
-  switch (baudrate) {
-  case Baudrate::B_115200:
-    cfsetispeed(&tty, B115200);
-    cfsetospeed(&tty, B115200);
-    break;
+SerialPort::~SerialPort(){}
 
-  default:
-    cfsetispeed(&tty, B115200);
-    cfsetospeed(&tty, B115200);
-    break;
-  }
-}
-int Serial::receive() {
+int SerialPort::receive() {
   if (m_serial_port == -1) {
     printf("Attempting to receive, but serial port is not open\n");
     return -1;
   }
-
-          // Read from file
-        // We provide the underlying raw array from the readBuffer_ vector to this C api.
-        // This will work because we do not delete/resize the vector while this method
-        // is called
   int num_bytes = read(m_serial_port, &read_buffer[0], read_buffer_size);
 
   // Error Handling
   if (num_bytes < 0) {
       // Read was unsuccessful
-    throw std::system_error(EFAULT, std::system_category());
+    // throw std::system_error(EFAULT, std::system_category());
   }
   else if (num_bytes == 0) {
-      // n == 0 means EOS, but also returned on device disconnection. We try to get termios2 to distinguish two these two states
-    struct termios2 term2;
-    int rv = ioctl(m_serial_port, TCGETS2, &term2);
-
-    if (rv != 0) {
-      // system error;
-      std::cout << "System error\n";
+      std::cout << "System error, device disconnected ... maybe\n";
       // throw std::system_error(EFAULT, std::system_category());
       return -1;
-    }
   }
 
   // check 
   if (read_buffer[0] != 0x7E) {
     std::cout << "Corrupted data \n";
       // throw std::system_error(EFAULT, std::system_category());
-    return -2; //
+    return -1; //
   }
-  int type = read_buffer[1]; // contains the buffer
+  char type = read_buffer[1]; // contains the buffer
   // switch (type) {
   // case 'd':
   //   memcpy(&value, read_buf + 3, sizeof(double));
@@ -145,4 +120,12 @@ int Serial::receive() {
   //   break;
 
   // }
+  std::cout << "Received "  << num_bytes << std::endl;
+  for(auto byte : read_buffer){
+    std::cout << byte << "\t";
+  }
+  std::cout << '\n';
+
+  return 0;
 }
+

@@ -1,12 +1,11 @@
-#ifndef SERIAL_H
-#define SERIAL_H
+#pragma once
 
 #include <string>   // For handling string operations
 #include <fstream>  // For file I/O operations (used to read/write to the COM port)
 #include <sstream>  
 #include <vector>  
-#include <asm/ioctls.h>  // For IOCTL command definitions in Linux
-#include <asm/termbits.h> // For terminal control definitions (struct termios2)
+// #include <asm/ioctls.h>  // For IOCTL command definitions in Linux
+// #include <asm/termbits.h> // For terminal control definitions (struct termios2)
 #include <cstdint>  // For using fixed-width integer types like uint8_t
 
 enum class Baudrate {
@@ -41,20 +40,19 @@ enum class State {
 
 
 
-
-class Serial {
+class SerialPort {
 public:
-  Serial();
-  Serial(const std::string& file);
-  Serial(const std::string& file, Baudrate baudrate);
+  SerialPort();
+  SerialPort(const std::string& file);
+  SerialPort(const std::string& file, Baudrate baudrate);
   int open_port(const std::string& file); // opens serial port and return the port number 
   int set_baudrate(Baudrate Baudrate);
 
   int send(const char* data, size_t size);
   int receive();
-  ~Serial();
+  ~SerialPort();
 
-  friend std::ostream& operator<<(std::ostream& os, const Serial& serial);
+  friend std::ostream& operator<<(std::ostream& os, const SerialPort& serial);
 
 
 private:
@@ -72,5 +70,3 @@ private:
 
   State state;
 };
-
-#endif

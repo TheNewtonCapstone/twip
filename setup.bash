@@ -12,7 +12,14 @@ function run_agent_wifi(){
 # run onnx container
 function run_onnx()
 {
-docker run -it --net=host  -e DISPLAY=$DISPLAY -v /home/nyquist/workspace/twip:/home twip:l4t-onnx-ros-r36.3.0  bin/bash
+docker run -it --net=host \
+    -e DISPLAY=$DISPLAY \
+    -v /dev:/dev \
+    --device-cgroup-rule='c *:* rmw' \
+    --device=/dev \
+    -v /home/nyquist/workspace/twip:/home \
+    twip:l4t-onnx-ros-r36.3.0 \
+    bin/bash
 }
 
 #run micro ros agent container with the option to interact with the container 
