@@ -31,11 +31,12 @@ SerialPort::SerialPort(const std::string& file) {
   read_buffer.reserve(read_buffer_size);
 
   m_serial_port = open(file.c_str(), O_RDWR);
-  if (m_serial_port = !- 1)
+  if (m_serial_port = !- 1) {
     state = State::OPEN;
+  }
 
   // Create new termios struct, we call it 'tty' for convention
-  termios tty;    
+  termios tty;
   // Read in existing settings, and handle any error
   if (tcgetattr(m_serial_port, &tty) != 0) {
     printf("Error %i from tcgetattr: %s\n", errno, strerror(errno));
@@ -75,7 +76,7 @@ SerialPort::SerialPort(const std::string& file) {
   }
 }
 
-SerialPort::~SerialPort(){}
+SerialPort::~SerialPort() {}
 
 int SerialPort::receive() {
   if (m_serial_port == -1) {
@@ -90,9 +91,9 @@ int SerialPort::receive() {
     // throw std::system_error(EFAULT, std::system_category());
   }
   else if (num_bytes == 0) {
-      std::cout << "System error, device disconnected ... maybe\n";
-      // throw std::system_error(EFAULT, std::system_category());
-      return -1;
+    std::cout << "System error, device disconnected ... maybe\n";
+    // throw std::system_error(EFAULT, std::system_category());
+    return -1;
   }
 
   // check 
@@ -101,7 +102,7 @@ int SerialPort::receive() {
       // throw std::system_error(EFAULT, std::system_category());
     return -1; //
   }
-  char type = read_buffer[1]; // contains the buffer
+  // char type = read_buffer[1]; // contains the buffer
   // switch (type) {
   // case 'd':
   //   memcpy(&value, read_buf + 3, sizeof(double));
@@ -120,8 +121,8 @@ int SerialPort::receive() {
   //   break;
 
   // }
-  std::cout << "Received "  << num_bytes << std::endl;
-  for(auto byte : read_buffer){
+  std::cout << "Received " << num_bytes << std::endl;
+  for (auto byte : read_buffer) {
     std::cout << byte << "\t";
   }
   std::cout << '\n';

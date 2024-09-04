@@ -45,6 +45,7 @@ void ControllerNode::control_loop() {
 
   model.run();
   // publish motor
+  motor_cmd = { model.get_output_buffer().at(0),model.get_output_buffer().at(1) };
   int send_bytes = write_serial(this->motor_cmd);
 
 
@@ -76,7 +77,7 @@ void ControllerNode::control_loop() {
 
   // pub->publish(motor_cmd);
 
-  // RCLCPP_INFO(get_logger(), out.str().c_str());
+  RCLCPP_INFO(get_logger(), out.str().c_str());
   std::cout << out.str() << std::endl;
 }
 
@@ -171,8 +172,8 @@ int ControllerNode::read_serial(std::array<float, 2>& data) {
     std::cout << "Corrupted message, no bytes\n";
     return -1;
   }
-  if (num_bytes < 18) {
-    std::cout << "Corrupted message, insufficient bytes\n";
+  if (num_bytes < 5) {
+    std::cout << "Corrupted message, insufficient bytes. Received " << num_bytes << " bytes\n";
     return -1;
   }
   if (read_buf[0] != 's') {
