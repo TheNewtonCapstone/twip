@@ -1,0 +1,5724 @@
+ControllerNode Node Started 
+Current Working directory is : /home/ros_ws
+Memory information : 
+0xaaaaf2eba870
+Input and output buffers have been initiliazed!
+Address of the controller :	0xaaaaf2eba870
+Input tensor 0xaaaaf37be340	 tensor size: 4
+Output tensor 0xaaaaf37bdab0	 tensor size: 2
+Control loop :
+Time step : 	0.0501723
+Data read : 	 16
+Roll : 	0.0210066
+Angular velocity : 	-0.0139562
+
+INPUTS:	0.0210066 -0.0139562 0 0 
+OUTPUTS	0.0466618 0.032174 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000312711
+Data read : 	 16
+Roll : 	0.0140223
+Angular velocity : 	-0.020964
+
+INPUTS:	0.0140223 -0.020964 0.0466618 0.032174 
+OUTPUTS	0.0472818 0.0299598 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000201669
+Data read : 	 16
+Roll : 	0.0140211
+Angular velocity : 	-0.0209648
+
+INPUTS:	0.0140211 -0.0209648 0.0472818 0.0299598 
+OUTPUTS	0.0476351 0.0299811 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000214053
+Data read : 	 16
+Roll : 	0.0210143
+Angular velocity : 	-0.0209554
+
+INPUTS:	0.0210143 -0.0209554 0.0476351 0.0299811 
+OUTPUTS	0.0390828 0.0191781 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00018122
+Data read : 	 16
+Roll : 	0.01403
+Angular velocity : 	-0.0279611
+
+INPUTS:	0.01403 -0.0279611 0.0390828 0.0191781 
+OUTPUTS	0.0518138 0.0302419 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000185156
+Data read : 	 16
+Roll : 	0.0210263
+Angular velocity : 	-0.0279495
+
+INPUTS:	0.0210263 -0.0279495 0.0518138 0.0302419 
+OUTPUTS	0.0402471 0.0164637 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.0001857
+Data read : 	 16
+Roll : 	0.0280208
+Angular velocity : 	-0.0279389
+
+INPUTS:	0.0280208 -0.0279389 0.0402471 0.0164637 
+OUTPUTS	0.0349181 0.00847276 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000194756
+Data read : 	 16
+Roll : 	0.0350153
+Angular velocity : 	-0.0279282
+
+INPUTS:	0.0350153 -0.0279282 0.0349181 0.00847276 
+OUTPUTS	0.0280368 -0.00109711 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000195076
+Data read : 	 16
+Roll : 	0.021028
+Angular velocity : 	-0.0279483
+
+INPUTS:	0.021028 -0.0279483 0.0280368 -0.00109711 
+OUTPUTS	0.0477696 0.0228615 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000198532
+Data read : 	 16
+Roll : 	0.0210369
+Angular velocity : 	-0.0349449
+
+INPUTS:	0.0210369 -0.0349449 0.0477696 0.0228615 
+OUTPUTS	0.0433399 0.0156434 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000199172
+Data read : 	 16
+Roll : 	0.0280315
+Angular velocity : 	-0.0349343
+
+INPUTS:	0.0280315 -0.0349343 0.0433399 0.0156434 
+OUTPUTS	0.0363435 0.00600441 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000203781
+Data read : 	 16
+Roll : 	7.04579
+Angular velocity : 	44.9278
+
+INPUTS:	7.04579 44.9278 0.0363435 0.00600441 
+OUTPUTS	4.67397 3.07684 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000191045
+Data read : 	 16
+Roll : 	0.0140556
+Angular velocity : 	-0.0419502
+
+INPUTS:	0.0140556 -0.0419502 4.67397 3.07684 
+OUTPUTS	0.428664 0.442179 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000200837
+Data read : 	 16
+Roll : 	0.0210476
+Angular velocity : 	-0.0419403
+
+INPUTS:	0.0210476 -0.0419403 0.428664 0.442179 
+OUTPUTS	-0.0161265 -0.0247277 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000194084
+Data read : 	 16
+Roll : 	0.0210502
+Angular velocity : 	-0.0419391
+
+INPUTS:	0.0210502 -0.0419391 -0.0161265 -0.0247277 
+OUTPUTS	0.0594331 0.0300913 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000177988
+Data read : 	 16
+Roll : 	0.0140556
+Angular velocity : 	-0.0419502
+
+INPUTS:	0.0140556 -0.0419502 0.0594331 0.0300913 
+OUTPUTS	0.0511718 0.0218505 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000174052
+Data read : 	 16
+Roll : 	0.0140638
+Angular velocity : 	-0.0489464
+
+INPUTS:	0.0140638 -0.0489464 0.0511718 0.0218505 
+OUTPUTS	0.0548474 0.021881 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000229349
+Data read : 	 16
+Roll : 	0.00706924
+Angular velocity : 	-0.0489571
+
+INPUTS:	0.00706924 -0.0489571 0.0548474 0.021881 
+OUTPUTS	0.0631867 0.0318639 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000203205
+Data read : 	 16
+Roll : 	6.40407e-05
+Angular velocity : 	-0.0419724
+
+INPUTS:	6.40407e-05 -0.0419724 0.0631867 0.0318639 
+OUTPUTS	0.0676802 0.0421986 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000261254
+Data read : 	 16
+Roll : 	0.0140531
+Angular velocity : 	-0.041951
+
+INPUTS:	0.0140531 -0.041951 0.0676802 0.0421986 
+OUTPUTS	0.0483947 0.0197355 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000191396
+Data read : 	 16
+Roll : 	0.0140531
+Angular velocity : 	-0.041951
+
+INPUTS:	0.0140531 -0.041951 0.0483947 0.0197355 
+OUTPUTS	0.0539725 0.0245116 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000213349
+Data read : 	 16
+Roll : 	0.00706112
+Angular velocity : 	-0.0419613
+
+INPUTS:	0.00706112 -0.0419613 0.0539725 0.0245116 
+OUTPUTS	0.0612637 0.0338427 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000192228
+Data read : 	 16
+Roll : 	0.0140556
+Angular velocity : 	-0.0419502
+
+INPUTS:	0.0140556 -0.0419502 0.0612637 0.0338427 
+OUTPUTS	0.0503601 0.0213131 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000174884
+Data read : 	 16
+Roll : 	0.0140445
+Angular velocity : 	-0.0349548
+
+INPUTS:	0.0140445 -0.0349548 0.0503601 0.0213131 
+OUTPUTS	0.0520046 0.0260143 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00018074
+Data read : 	 16
+Roll : 	0.0140531
+Angular velocity : 	-0.041951
+
+INPUTS:	0.0140531 -0.041951 0.0520046 0.0260143 
+OUTPUTS	0.0525226 0.0234553 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000174084
+Data read : 	 16
+Roll : 	0.0140424
+Angular velocity : 	-0.0349556
+
+INPUTS:	0.0140424 -0.0349556 0.0525226 0.0234553 
+OUTPUTS	0.0514366 0.0254839 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000206116
+Data read : 	 16
+Roll : 	0.00704576
+Angular velocity : 	-0.0349667
+
+INPUTS:	0.00704576 -0.0349667 0.0514366 0.0254839 
+OUTPUTS	0.0597966 0.0362462 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000185924
+Data read : 	 16
+Roll : 	0.0140505
+Angular velocity : 	-0.0419519
+
+INPUTS:	0.0140505 -0.0419519 0.0597966 0.0362462 
+OUTPUTS	0.0500685 0.021459 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000179332
+Data read : 	 16
+Roll : 	0.0210583
+Angular velocity : 	-0.0489357
+
+INPUTS:	0.0210583 -0.0489357 0.0500685 0.021459 
+OUTPUTS	0.0463987 0.0113645 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000181316
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0463987 0.0113645 
+OUTPUTS	0.0484876 0.0126342 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000174628
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0484876 0.0126342 
+OUTPUTS	0.0480861 0.0121663 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000177188
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0480861 0.0121663 
+OUTPUTS	0.048203 0.0122693 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000188197
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.048203 0.0122693 
+OUTPUTS	0.0481749 0.0122413 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000190885
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0481749 0.0122413 
+OUTPUTS	0.0481822 0.0122481 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000184356
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0481822 0.0122481 
+OUTPUTS	0.0481804 0.0122465 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000193028
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0481804 0.0122465 
+OUTPUTS	0.0481808 0.0122469 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000191268
+Data read : 	 16
+Roll : 	0.0210553
+Angular velocity : 	-0.048937
+
+INPUTS:	0.0210553 -0.048937 0.0481808 0.0122469 
+OUTPUTS	0.0481807 0.0122468 
+Data sent : 	 32
+
+
+Corrupted message, insufficient bytes. Received 0 bytes
+Control loop :
+Time step : 	5.08628
+Data read : 	 16
+Roll : 	-2.65579
+Angular velocity : 	-2.34309
+
+INPUTS:	-2.65579 -2.34309 0.0481807 0.0122468 
+OUTPUTS	8.45884 3.17783 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000247849
+Data read : 	 16
+Roll : 	1.80456
+Angular velocity : 	0.0591506
+
+INPUTS:	1.80456 0.0591506 8.45884 3.17783 
+OUTPUTS	0.0969434 0.384997 
+Data sent : 	 32
+
+
+Corrupted message, no bytes
+Control loop :
+Time step : 	0.14408
+Data read : 	 16
+Roll : 	1.6366
+Angular velocity : 	0.0724357
+
+INPUTS:	1.6366 0.0724357 0.0969434 0.384997 
+OUTPUTS	-1.26525 -2.2254 
+Data sent : 	 32
+
+
+ControllerNode Node Started 
+Current Working directory is : /home/ros_ws
+Memory information : 
+0xaaaaed47e790
+Input and output buffers have been initiliazed!
+Address of the controller :	0xaaaaed47e790
+Input tensor 0xaaaaedd827b0	 tensor size: 4
+Output tensor 0xaaaaedd81e00	 tensor size: 2
+Control loop :
+Time step : 	0.0501517
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 0 0 
+OUTPUTS	-1.18803 -1.93707 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00026881
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.18803 -1.93707 
+OUTPUTS	-1.63574 -1.17442 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000220583
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.63574 -1.17442 
+OUTPUTS	-1.72593 -1.48262 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000205479
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.72593 -1.48262 
+OUTPUTS	-1.64513 -1.23385 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000220615
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.64513 -1.23385 
+OUTPUTS	-1.71448 -1.44184 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000203623
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.71448 -1.44184 
+OUTPUTS	-1.65866 -1.26961 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00021172
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.65866 -1.26961 
+OUTPUTS	-1.70643 -1.41333 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000207207
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70643 -1.41333 
+OUTPUTS	-1.66754 -1.29403 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000206695
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.66754 -1.29403 
+OUTPUTS	-1.70056 -1.39358 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000188071
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70056 -1.39358 
+OUTPUTS	-1.67348 -1.31083 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00018871
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.67348 -1.31083 
+OUTPUTS	-1.69633 -1.37986 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000178119
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69633 -1.37986 
+OUTPUTS	-1.6775 -1.32242 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000188711
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6775 -1.32242 
+OUTPUTS	-1.69334 -1.37033 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000187527
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69334 -1.37033 
+OUTPUTS	-1.68024 -1.33045 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000235561
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68024 -1.33045 
+OUTPUTS	-1.69122 -1.3637 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000204007
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69122 -1.3637 
+OUTPUTS	-1.68212 -1.33601 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000202407
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68212 -1.33601 
+OUTPUTS	-1.68974 -1.3591 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000189638
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68974 -1.3591 
+OUTPUTS	-1.68341 -1.33987 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000187878
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68341 -1.33987 
+OUTPUTS	-1.6887 -1.3559 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000259273
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6887 -1.3559 
+OUTPUTS	-1.6843 -1.34254 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000197958
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6843 -1.34254 
+OUTPUTS	-1.68797 -1.35367 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000205288
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68797 -1.35367 
+OUTPUTS	-1.68492 -1.3444 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000198439
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68492 -1.3444 
+OUTPUTS	-1.68747 -1.35213 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00021172
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68747 -1.35213 
+OUTPUTS	-1.68535 -1.34569 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000190182
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68535 -1.34569 
+OUTPUTS	-1.68712 -1.35106 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000192262
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68712 -1.35106 
+OUTPUTS	-1.68564 -1.34658 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000185062
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68564 -1.34658 
+OUTPUTS	-1.68687 -1.35031 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000199975
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68687 -1.35031 
+OUTPUTS	-1.68585 -1.3472 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000182214
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68585 -1.3472 
+OUTPUTS	-1.6867 -1.34979 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000193319
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6867 -1.34979 
+OUTPUTS	-1.68599 -1.34764 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000175462
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68599 -1.34764 
+OUTPUTS	-1.68658 -1.34943 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00024372
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68658 -1.34943 
+OUTPUTS	-1.68609 -1.34794 
+Data sent : 	 32
+
+
+Corrupted message, no bytes
+Control loop :
+Time step : 	0.43285
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68609 -1.34794 
+OUTPUTS	-1.6865 -1.34918 
+Data sent : 	 32
+
+
+ControllerNode Node Started 
+Current Working directory is : /home/ros_ws
+Memory information : 
+0xaaaae0d5ec00
+Input and output buffers have been initiliazed!
+Address of the controller :	0xaaaae0d5ec00
+Input tensor 0xaaaae166b860	 tensor size: 4
+Output tensor 0xaaaae166aef0	 tensor size: 2
+Control loop :
+Time step : 	0.050144
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 0 0 
+OUTPUTS	-1.18803 -1.93707 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000452559
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.18803 -1.93707 
+OUTPUTS	-1.63574 -1.17442 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000432237
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.63574 -1.17442 
+OUTPUTS	-1.72593 -1.48262 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000374444
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.72593 -1.48262 
+OUTPUTS	-1.64513 -1.23385 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000612691
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.64513 -1.23385 
+OUTPUTS	-1.71448 -1.44184 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000434158
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.71448 -1.44184 
+OUTPUTS	-1.65866 -1.26961 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000482543
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.65866 -1.26961 
+OUTPUTS	-1.70643 -1.41333 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000371788
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70643 -1.41333 
+OUTPUTS	-1.66754 -1.29403 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378797
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.66754 -1.29403 
+OUTPUTS	-1.70056 -1.39358 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000406253
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70056 -1.39358 
+OUTPUTS	-1.67348 -1.31083 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395565
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.67348 -1.31083 
+OUTPUTS	-1.69633 -1.37986 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000377516
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69633 -1.37986 
+OUTPUTS	-1.6775 -1.32242 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000346284
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6775 -1.32242 
+OUTPUTS	-1.69334 -1.37033 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000334475
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69334 -1.37033 
+OUTPUTS	-1.68024 -1.33045 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000461454
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68024 -1.33045 
+OUTPUTS	-1.69122 -1.3637 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000320266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69122 -1.3637 
+OUTPUTS	-1.68212 -1.33601 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000684214
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68212 -1.33601 
+OUTPUTS	-1.68974 -1.3591 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000342091
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68974 -1.3591 
+OUTPUTS	-1.68341 -1.33987 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000704951
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68341 -1.33987 
+OUTPUTS	-1.6887 -1.3559 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370796
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6887 -1.3559 
+OUTPUTS	-1.6843 -1.34254 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390637
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6843 -1.34254 
+OUTPUTS	-1.68797 -1.35367 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385325
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68797 -1.35367 
+OUTPUTS	-1.68492 -1.3444 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000428525
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68492 -1.3444 
+OUTPUTS	-1.68747 -1.35213 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000561394
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68747 -1.35213 
+OUTPUTS	-1.68535 -1.34569 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000600115
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68535 -1.34569 
+OUTPUTS	-1.68712 -1.35106 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398733
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68712 -1.35106 
+OUTPUTS	-1.68564 -1.34658 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000633652
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68564 -1.34658 
+OUTPUTS	-1.68687 -1.35031 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000609492
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68687 -1.35031 
+OUTPUTS	-1.68585 -1.3472 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000614036
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68585 -1.3472 
+OUTPUTS	-1.6867 -1.34979 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000625844
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6867 -1.34979 
+OUTPUTS	-1.68599 -1.34764 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000582194
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68599 -1.34764 
+OUTPUTS	-1.68658 -1.34943 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000576658
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68658 -1.34943 
+OUTPUTS	-1.68609 -1.34794 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000416013
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68609 -1.34794 
+OUTPUTS	-1.6865 -1.34918 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393516
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6865 -1.34918 
+OUTPUTS	-1.68616 -1.34814 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000403341
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68616 -1.34814 
+OUTPUTS	-1.68644 -1.34901 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000451118
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68644 -1.34901 
+OUTPUTS	-1.68621 -1.34829 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380876
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68621 -1.34829 
+OUTPUTS	-1.68641 -1.34889 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000383053
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68641 -1.34889 
+OUTPUTS	-1.68624 -1.34839 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000384716
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68624 -1.34839 
+OUTPUTS	-1.68638 -1.34881 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.0003787
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68638 -1.34881 
+OUTPUTS	-1.68626 -1.34846 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000341899
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68626 -1.34846 
+OUTPUTS	-1.68636 -1.34875 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000379116
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68636 -1.34875 
+OUTPUTS	-1.68628 -1.34851 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00044107
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68628 -1.34851 
+OUTPUTS	-1.68635 -1.34871 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000463119
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68635 -1.34871 
+OUTPUTS	-1.68629 -1.34854 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000417229
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68629 -1.34854 
+OUTPUTS	-1.68634 -1.34868 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378188
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68634 -1.34868 
+OUTPUTS	-1.6863 -1.34856 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.0003915
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6863 -1.34856 
+OUTPUTS	-1.68633 -1.34866 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000384908
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68633 -1.34866 
+OUTPUTS	-1.6863 -1.34858 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364812
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6863 -1.34858 
+OUTPUTS	-1.68632 -1.34865 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000490352
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34865 
+OUTPUTS	-1.68631 -1.34859 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000452686
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34859 
+OUTPUTS	-1.68632 -1.34864 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370604
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34864 
+OUTPUTS	-1.68631 -1.3486 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00044043
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.3486 
+OUTPUTS	-1.68632 -1.34863 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00045851
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34863 
+OUTPUTS	-1.68631 -1.3486 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000396781
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.3486 
+OUTPUTS	-1.68632 -1.34863 
+Data sent : 	 32
+
+
+Corrupted message, no bytes
+ControllerNode Node Started 
+Current Working directory is : /home/ros_ws
+Memory information : 
+0xaaab0957c320
+Input and output buffers have been initiliazed!
+Address of the controller :	0xaaab0957c320
+Input tensor 0xaaab09e77260	 tensor size: 4
+Output tensor 0xaaab09722700	 tensor size: 2
+Control loop :
+Time step : 	0.0501723
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 0 0 
+OUTPUTS	-1.18803 -1.93707 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.18803 -1.93707 
+OUTPUTS	-1.63574 -1.17442 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000331849
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.63574 -1.17442 
+OUTPUTS	-1.72593 -1.48262 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000546703
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.72593 -1.48262 
+OUTPUTS	-1.64513 -1.23385 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000696467
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.64513 -1.23385 
+OUTPUTS	-1.71448 -1.44184 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000408268
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.71448 -1.44184 
+OUTPUTS	-1.65866 -1.26961 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000588209
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.65866 -1.26961 
+OUTPUTS	-1.70643 -1.41333 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385514
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70643 -1.41333 
+OUTPUTS	-1.66754 -1.29403 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00051467
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.66754 -1.29403 
+OUTPUTS	-1.70056 -1.39358 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000369578
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.70056 -1.39358 
+OUTPUTS	-1.67348 -1.31083 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000384138
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.67348 -1.31083 
+OUTPUTS	-1.69633 -1.37986 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349642
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69633 -1.37986 
+OUTPUTS	-1.6775 -1.32242 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000325129
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6775 -1.32242 
+OUTPUTS	-1.69334 -1.37033 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000346026
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69334 -1.37033 
+OUTPUTS	-1.68024 -1.33045 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000422379
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68024 -1.33045 
+OUTPUTS	-1.69122 -1.3637 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000402155
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.69122 -1.3637 
+OUTPUTS	-1.68212 -1.33601 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378763
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68212 -1.33601 
+OUTPUTS	-1.68974 -1.3591 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000503982
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68974 -1.3591 
+OUTPUTS	-1.68341 -1.33987 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000714068
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68341 -1.33987 
+OUTPUTS	-1.6887 -1.3559 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000554383
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6887 -1.3559 
+OUTPUTS	-1.6843 -1.34254 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000572464
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6843 -1.34254 
+OUTPUTS	-1.68797 -1.35367 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037489
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68797 -1.35367 
+OUTPUTS	-1.68492 -1.3444 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000406156
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68492 -1.3444 
+OUTPUTS	-1.68747 -1.35213 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000404491
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68747 -1.35213 
+OUTPUTS	-1.68535 -1.34569 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000426732
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68535 -1.34569 
+OUTPUTS	-1.68712 -1.35106 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000351978
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68712 -1.35106 
+OUTPUTS	-1.68564 -1.34658 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000389739
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68564 -1.34658 
+OUTPUTS	-1.68687 -1.35031 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363594
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68687 -1.35031 
+OUTPUTS	-1.68585 -1.3472 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000344714
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68585 -1.3472 
+OUTPUTS	-1.6867 -1.34979 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000377579
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6867 -1.34979 
+OUTPUTS	-1.68599 -1.34764 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000336521
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68599 -1.34764 
+OUTPUTS	-1.68658 -1.34943 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00045726
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68658 -1.34943 
+OUTPUTS	-1.68609 -1.34794 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037505
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68609 -1.34794 
+OUTPUTS	-1.6865 -1.34918 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00049387
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6865 -1.34918 
+OUTPUTS	-1.68616 -1.34814 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000502733
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68616 -1.34814 
+OUTPUTS	-1.68644 -1.34901 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000448524
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68644 -1.34901 
+OUTPUTS	-1.68621 -1.34829 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000449164
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68621 -1.34829 
+OUTPUTS	-1.68641 -1.34889 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000386442
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68641 -1.34889 
+OUTPUTS	-1.68624 -1.34839 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00035745
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68624 -1.34839 
+OUTPUTS	-1.68638 -1.34881 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000379339
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68638 -1.34881 
+OUTPUTS	-1.68626 -1.34846 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000372106
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68626 -1.34846 
+OUTPUTS	-1.68636 -1.34875 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000392394
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68636 -1.34875 
+OUTPUTS	-1.68628 -1.34851 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000374603
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68628 -1.34851 
+OUTPUTS	-1.68635 -1.34871 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036657
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68635 -1.34871 
+OUTPUTS	-1.68629 -1.34854 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000340585
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68629 -1.34854 
+OUTPUTS	-1.68634 -1.34868 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349513
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68634 -1.34868 
+OUTPUTS	-1.6863 -1.34856 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000374058
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6863 -1.34856 
+OUTPUTS	-1.68633 -1.34866 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037425
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68633 -1.34866 
+OUTPUTS	-1.6863 -1.34858 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000386186
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.6863 -1.34858 
+OUTPUTS	-1.68632 -1.34865 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000430828
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34865 
+OUTPUTS	-1.68631 -1.34859 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398731
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34859 
+OUTPUTS	-1.68632 -1.34864 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373034
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34864 
+OUTPUTS	-1.68631 -1.3486 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000407596
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.3486 
+OUTPUTS	-1.68632 -1.34863 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000470573
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34863 
+OUTPUTS	-1.68631 -1.3486 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.3486 
+OUTPUTS	-1.68632 -1.34863 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000351785
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34863 
+OUTPUTS	-1.68631 -1.34861 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398059
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34861 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000431148
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34861 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395083
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34861 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363978
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34861 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000384874
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34861 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000406188
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34861 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349097
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34861 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000356266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000407243
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000330185
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000488654
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00033985
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000358058
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68632 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000374538
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68632 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385002
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367114
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000381802
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000343273
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390026
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000386539
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000410027
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000369098
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380362
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000410379
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000436172
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036033
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000427724
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364298
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000376074
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000347466
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000342121
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000361322
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000469837
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367786
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000338025
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000353769
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355529
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000352906
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368874
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000362666
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000407787
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037841
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00042094
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000464365
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000453997
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000403755
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393227
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385034
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000445068
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000436939
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000366698
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037121
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000415275
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000445356
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000369163
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00040097
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000383883
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367338
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000391147
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000807862
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349577
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000362506
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385866
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000582384
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000469709
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000414955
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000443148
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000615313
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000387691
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370059
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000472045
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398475
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378634
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000399723
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000345513
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370698
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000351753
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395531
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000357962
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000362602
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036449
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000361162
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000328392
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000366058
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00044574
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00035025
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000418123
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000482733
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037409
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000418668
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000394026
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000400299
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000510478
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036065
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000348682
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000387914
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000508622
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393706
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000329481
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00044798
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000381354
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000485453
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036257
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393003
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00035937
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000361993
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000392715
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000549231
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000396778
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000344841
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000403691
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000397003
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000389515
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000445868
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000410412
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373834
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373547
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000389803
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378986
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000485069
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355369
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373386
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000371338
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398666
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373514
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000332521
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000359402
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000492909
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000410603
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380362
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000470221
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000381419
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000444652
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000408395
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380682
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000421804
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000466796
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000361802
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382794
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00035857
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036657
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363818
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000377226
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363178
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395435
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000372522
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364106
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349385
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000487149
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360906
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000369386
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000414699
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370858
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036305
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000468908
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000391467
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000356298
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000344617
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390635
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000372586
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360713
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367498
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000426667
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036993
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385291
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364714
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000453005
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000377578
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385194
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000413771
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000359498
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000450092
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000404107
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000412331
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000415531
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037505
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378506
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000496942
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364234
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360745
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382859
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000347498
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000446284
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393802
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380586
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360362
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000358858
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382026
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390346
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000476525
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000372874
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000403883
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000439884
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000374218
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000444268
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382826
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382954
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355914
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000382986
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000328617
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000396203
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000350985
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00188248
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000654641
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000357866
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000483245
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000737204
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000342793
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00052523
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360554
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000385898
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368426
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000377802
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000384842
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368234
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000356234
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000432108
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395467
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000387242
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000409675
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398347
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000347946
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390922
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000419884
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378026
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363082
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000391498
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000329513
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000351945
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000393867
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000483533
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000426123
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000362761
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367722
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000359562
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037025
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000354153
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000430284
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373962
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000389002
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368618
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000463948
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00811746
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000352522
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000350825
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364073
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355114
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367434
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000386571
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000395722
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373098
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000380651
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000376266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000372618
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000367306
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368266
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000341481
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000720979
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000483501
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000416651
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000335977
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000386986
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00035665
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000378858
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000364298
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000398698
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000359434
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000357545
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000376874
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00038769
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00039233
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037873
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000451212
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000473421
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000523822
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000427851
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000752532
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000523214
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000356201
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000354697
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000383338
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349577
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000359306
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373129
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00031668
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000641713
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000632048
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000409323
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360746
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000347977
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000373066
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000348233
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000370634
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000471116
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000338857
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000360745
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000379658
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000356969
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355305
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.0003234
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000391018
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000416331
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000333353
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000361385
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000352297
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00036721
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000390666
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000349673
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037985
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000396587
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000342985
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000445899
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000425131
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000503213
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000368073
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000355689
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000565423
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000575023
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000351721
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000375178
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00045742
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000421995
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000436204
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000426348
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000366858
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000383499
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000363081
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000428844
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000410538
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.00037729
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000397002
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Control loop :
+Time step : 	0.000341065
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
+Corrupted message, no bytes
+Control loop :
+Time step : 	0.115173
+Data read : 	 16
+Roll : 	1.3079
+Angular velocity : 	0.126945
+
+INPUTS:	1.3079 0.126945 -1.68631 -1.34862 
+OUTPUTS	-1.68631 -1.34862 
+Data sent : 	 32
+
+
