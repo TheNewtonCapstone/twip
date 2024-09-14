@@ -1,4 +1,0 @@
-[submodule "onnxruntime"]
-	path = onnxruntime
-	url = https://github.com/Microsoft/onnxruntime
-	branch = tags/v1.9.1
