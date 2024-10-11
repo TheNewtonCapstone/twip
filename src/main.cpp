@@ -1,4 +1,6 @@
 #include <iostream>
+#include <filesystem>
+#include <fstream>
 #include <sstream>
 #include <stdio.h>
 #include <string.h>
@@ -14,8 +16,10 @@
 #include <chrono>
 #include "onnx.hpp"
 
-// #define PID_CONTROLLER
-#define ONNX_CONTROLLER
+#define DEBUG_LOG
+#define PID_CONTROLLER
+// #define ONNX_CONTROLLER
+
 
 const int RX_BUFFER_SIZE = 255;
 const int TX_BUFFER_SIZE = 32;
@@ -29,39 +33,54 @@ struct PID
   float integral;
   float prev_error;
 };
+
 PID pid = {1.55, 0.1, 0.15, .0f, .0f};
 
+struct log_data
+{
+  float time;
+  float dt;
+  float roll;
+  float error;
+  float ctrl;
+  int pwm;
+};
+
+log_data info = {0.f, 0.f, 0.f, 0.f, 0.f, 0};
+
+std::chrono::steady_clock::time_point prev_time;
+const std::chrono::microseconds PERIOD(1 / FREQ * 1000000);
+
+
+// function prototypes
 int read_serial(const int file_desc, std::vector<float> &);
 int send_serial(const int file_desc, std::array<float, 2> &);
 // run the control step
 void control_step(const std::vector<float> &input, std::array<float, 2> &output, float dt);
 int config_serial();
+int torque_to_pwm(float torque);
+std::string get_cwd();
 
-std::chrono::steady_clock::time_point prev_time;
+int main(int argc, char const *argv[]){
+int file_desc;
+std::string work_dir = get_cwd();
 
-const std::chrono::microseconds PERIOD(1 / FREQ * 1000000);
+#ifdef DEBUG_LOG
+  std::ofstream logger;
+  std::string log_file_path = work_dir + "/logs/log.csv";
+  logger.open(log_file_path);
+  logger << "time,dt,roll,error,ctrl,pwm" << std::endl;
+#endif
 
-int main(int argc, char const *argv[])
-{
-
-  char cwd[255];
-  if (getcwd(cwd, sizeof(cwd)) != nullptr)
-  {
-    std::cout << "Current Working directory is : " << cwd << std::endl;
-  }
-  else
-  {
-    perror("ERROR getting cwd");
-  }
-
-  int file_desc;
-  std::string path = "/home/models/twip.pth.onnx";
+#ifdef ONNX_CONTROLLER
+  std::string model_path = work_dir + "/models/twip.pth.onnx";
   const int num_observations = 4;
   const int num_actions = 2;
-  OnnxHandler model = OnnxHandler(path, num_observations, num_actions);
+  OnnxHandler model = OnnxHandler(model_path, num_observations, num_actions);
+  auto &input_buffer = model.get_input_buffer();
+#endif
 
-  try
-  {
+  try {
     file_desc = config_serial();
     std::vector<float> imu_data(2, 0);
     std::array<float, 2> motor_cmd{};
@@ -69,12 +88,12 @@ int main(int argc, char const *argv[])
 
     prev_time = std::chrono::steady_clock::now();
 
-    auto &input_buffer = model.get_input_buffer();
-
-    while (1)
-    {
+    while (1){
       auto current_time = std::chrono::steady_clock::now();
+      info.time = std::chrono::duration<float>(current_time.time_since_epoch()).count();
+
       float dt = std::chrono::duration<float>(current_time - prev_time).count();
+      info.dt = dt;
 
       int rs = read_serial(file_desc, imu_data);
       if (rs < 0)
@@ -100,8 +119,7 @@ int main(int argc, char const *argv[])
         printf("%f\t", n);
       }
 
-      for (auto n : prev_motor_cmd)
-      {
+      for (auto n : prev_motor_cmd){
         printf("%f\t", n);
       }
       printf("\n");
@@ -118,7 +136,7 @@ int main(int argc, char const *argv[])
       out << "Data read : \t " << rs << "\n";
 
       out << "\nINPUTS:\t";
-      for (auto element : model.get_input_buffer())
+      for (auto element : imu_data)
       {
         out << element << " ";
       }
@@ -131,7 +149,10 @@ int main(int argc, char const *argv[])
 
       out << "\nData sent : \t " << sent_bytes << "\n";
       out << std::endl;
-
+    
+#ifdef DEBUG_LOG
+    logger << info.time << "," << info.dt << "," << info.roll << "," << info.error << "," << info.ctrl << info.pwm << std::endl;
+#endif
       // std::this_thread::sleep_until(next_wake_time);
       // next_wake_time += PERIOD;
       std::cout << out.str() << std::endl;
@@ -164,6 +185,13 @@ void control_step(const std::vector<float> &input, std::array<float, 2> &output,
 
   output[0] = -control_signal;
   output[1] = control_signal;
+
+#ifdef DEBUG_LOG
+    info.roll = current_roll;
+    info.error = error;
+    info.ctrl = control_signal;
+    info.pwm = torque_to_pwm(control_signal);
+#endif
 
   // for (auto& cmd : output) {
   //   if (cmd > 1.0f) cmd = 1.0f;
@@ -276,4 +304,22 @@ int config_serial()
   }
 
   return file_desc;
+}
+
+int torque_to_pwm(float torque){ 
+  constexpr float STALL_TORQUE = 1.05f;
+  constexpr float PWM_MIN = 80;
+  constexpr float PWM_MAX = 255;
+
+  float speed = ((torque) / STALL_TORQUE);
+  int pwm = PWM_MIN + static_cast<int>(speed * (PWM_MAX - PWM_MIN)); 
+  return pwm;
+}
+
+std::string get_cwd(){
+  std::filesystem::path cwd = std::filesystem::current_path();
+  std::cout << "Current Working directory is : " << cwd << std::endl;
+  std::filesystem::path parent = cwd.parent_path();
+  std::cout << "Parent directory is : " << parent << std::endl;
+  return parent.string();
 }
