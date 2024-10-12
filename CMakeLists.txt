@@ -7,7 +7,8 @@ project(Controller)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# target_compile_features(Controller PUBLIC c_std_99 cxx_std_17)
+# target_compile_features(model PUBLIC c_std_99 cxx_std_17)
+# target_compile_features(pid PUBLIC c_std_99 cxx_std_17)
 
 # setup onnx runtime  dependency 
 set(ONNXRUNTIME_INCLUDE_DIR /usr/local/include/onnxruntime)
@@ -21,16 +22,17 @@ include_directories(
 
 link_directories("${ONNXRUNTIME_BIN_DIR}/")
 set(SOURCES
-    src/main.cpp
     src/onnx.cpp
+    src/model.cpp
 )
 
 # Add executable
-add_executable(Controller ${SOURCES})
+add_executable(model ${SOURCES})
+add_executable(pid src/pid.cpp)
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-install(TARGETS Controller
+install(TARGETS model
       DESTINATION lib/${PROJECT_NAME}
       )
 
@@ -39,7 +41,7 @@ install(DIRECTORY include
     DESTINATION include/
     )
 
-target_link_libraries(Controller
+target_link_libraries(model
   onnxruntime
 )
 

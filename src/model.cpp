@@ -18,37 +18,24 @@
 #include <ctime>
 
 #define DEBUG_LOG
-//#define PID_CONTROLLER
-#define ONNX_CONTROLLER
 
 using namespace std::chrono_literals;
 
 const int RX_BUFFER_SIZE = 255;
 const int TX_BUFFER_SIZE = 32;
 const float ROLL_SETPOINT = 0;
-struct PID
-{
-  float kp;
-  float kd;
-  float ki;
-  float integral;
-  float prev_error;
-};
 
-PID pid = {1.35, 0.04, 0.15, .0f, .0f};
 
 struct log_data
 {
   float time;
   float dt;
   float roll;
-  float error;
-  float ctrl;
-  int pwm_1;
-  int pwm_2;
+  float ctrl_1;
+  float ctrl_2; 
 };
 
-log_data info = {0.f, 0.f, 0.f, 0.f, 0.f, 0, 0};
+log_data info = {0.f, 0.f, 0.f, 0.f, 0.f}; 
 
 std::chrono::steady_clock::time_point prev_time;
 constexpr auto PERIOD = 20ms; // 20 milliseconds for 50 Hz
@@ -71,16 +58,14 @@ std::string work_dir = get_cwd();
   std::ofstream logger;
   std::string log_file_path = work_dir + "/logs/" + get_log_time() + ".csv";
   logger.open(log_file_path);
-  logger << "time,dt,roll,error,pwm_1,pwm_2" << std::endl;
+  logger << "time,dt,roll,error," << std::endl;
 #endif
 
-#ifdef ONNX_CONTROLLER
   std::string model_path = work_dir + "/models/model.onnx";
   const int num_observations = 4;
   const int num_actions = 2;
   OnnxHandler model = OnnxHandler(model_path, num_observations, num_actions);
   auto &input_buffer = model.get_input_buffer();
-#endif
 
   try {
     file_desc = config_serial();
@@ -103,7 +88,6 @@ std::string work_dir = get_cwd();
         std::cout << "Error reading serial data\n";
         continue;
       }
-#ifdef ONNX_CONTROLLER
       // load buffer
       input_buffer[0] = imu_data[0];
       input_buffer[1] = imu_data[1];
@@ -116,10 +100,6 @@ std::string work_dir = get_cwd();
       motor_cmd[0] = prev_motor_cmd[0] = model.get_output_buffer()[0];
       motor_cmd[1] = prev_motor_cmd[1] = - model.get_output_buffer()[1];
 
-#endif
-#ifdef PID_CONTROLLER
-      control_step(imu_data, motor_cmd, dt);
-#endif
       int sent_bytes = send_serial(file_desc, motor_cmd);
 
       std::ostringstream out;
@@ -144,15 +124,13 @@ std::string work_dir = get_cwd();
 
 #ifdef DEBUG_LOG
     info.roll = imu_data[0];
-    // info.error = error;
-    info.pwm_1 = action_to_pwm(motor_cmd[0]);
-    info.pwm_2 = action_to_pwm(motor_cmd[1]);
-    logger << info.time << "," << info.dt << "," << info.roll << "," << info.pwm_1 << "," << info.pwm_2 << std::endl;
+    info.ctrl_1 = motor_cmd[0];
+    info.ctrl_2 = motor_cmd[1];
+    logger << info.time << "," << info.dt << "," << info.roll << "," << info.ctrl_1 << "," << info.ctrl_2 << std::endl;
 
 #endif
     
       std::this_thread::sleep_until(current_time + PERIOD);
-
       std::cout << out.str() << std::endl;
       prev_time = current_time;
     }
@@ -165,37 +143,6 @@ std::string work_dir = get_cwd();
 
   return 0; // success
 };
-
-// pid control step
-void control_step(const std::vector<float> &input, std::array<float, 2> &output, float dt)
-{
-  float current_roll = input[0];
-  float error = ROLL_SETPOINT - current_roll;
-
-  // PID calculations
-  pid.integral += error * dt;
-
-  float derivative = (error - pid.prev_error) / dt;
-
-  float control_signal = pid.kp * error + pid.ki * pid.integral + pid.kd * derivative;
-
-  pid.prev_error = error;
-
-  output[0] = control_signal;
-  output[1] = -control_signal;
-
-#ifdef DEBUG_LOG
-    /* info.roll = current_roll;
-    info.error = error;
-    info.ctrl = control_signal;
-    info.pwm_1 = action_to_pwm(control_signal); */
-#endif
-
-  // for (auto& cmd : output) {
-  //   if (cmd > 1.0f) cmd = 1.0f;
-  //   if (cmd < -1.0f) cmd = -1.0f;
-  // }
-}
 
 
 // reads from the serial port and update imu value
