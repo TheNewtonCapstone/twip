@@ -15,15 +15,16 @@
 #include <thread>
 #include <chrono>
 #include "onnx.hpp"
+#include <ctime>
 
 #define DEBUG_LOG
-#define PID_CONTROLLER
-// #define ONNX_CONTROLLER
+//#define PID_CONTROLLER
+#define ONNX_CONTROLLER
 
+using namespace std::chrono_literals;
 
 const int RX_BUFFER_SIZE = 255;
 const int TX_BUFFER_SIZE = 32;
-const int FREQ = 100;
 const float ROLL_SETPOINT = 0;
 struct PID
 {
@@ -34,7 +35,7 @@ struct PID
   float prev_error;
 };
 
-PID pid = {1.55, 0.1, 0.15, .0f, .0f};
+PID pid = {1.35, 0.04, 0.15, .0f, .0f};
 
 struct log_data
 {
@@ -43,14 +44,14 @@ struct log_data
   float roll;
   float error;
   float ctrl;
-  int pwm;
+  int pwm_1;
+  int pwm_2;
 };
 
-log_data info = {0.f, 0.f, 0.f, 0.f, 0.f, 0};
+log_data info = {0.f, 0.f, 0.f, 0.f, 0.f, 0, 0};
 
 std::chrono::steady_clock::time_point prev_time;
-const std::chrono::microseconds PERIOD(1 / FREQ * 1000000);
-
+constexpr auto PERIOD = 20ms; // 20 milliseconds for 50 Hz
 
 // function prototypes
 int read_serial(const int file_desc, std::vector<float> &);
@@ -58,8 +59,9 @@ int send_serial(const int file_desc, std::array<float, 2> &);
 // run the control step
 void control_step(const std::vector<float> &input, std::array<float, 2> &output, float dt);
 int config_serial();
-int torque_to_pwm(float torque);
+int action_to_pwm(float torque);
 std::string get_cwd();
+std::string get_log_time();
 
 int main(int argc, char const *argv[]){
 int file_desc;
@@ -67,13 +69,13 @@ std::string work_dir = get_cwd();
 
 #ifdef DEBUG_LOG
   std::ofstream logger;
-  std::string log_file_path = work_dir + "/logs/log.csv";
+  std::string log_file_path = work_dir + "/logs/" + get_log_time() + ".csv";
   logger.open(log_file_path);
-  logger << "time,dt,roll,error,ctrl,pwm" << std::endl;
+  logger << "time,dt,roll,error,pwm_1,pwm_2" << std::endl;
 #endif
 
 #ifdef ONNX_CONTROLLER
-  std::string model_path = work_dir + "/models/twip.pth.onnx";
+  std::string model_path = work_dir + "/models/model.onnx";
   const int num_observations = 4;
   const int num_actions = 2;
   OnnxHandler model = OnnxHandler(model_path, num_observations, num_actions);
@@ -87,13 +89,13 @@ std::string work_dir = get_cwd();
     std::array<float, 2> prev_motor_cmd{};
 
     prev_time = std::chrono::steady_clock::now();
-
+  
     while (1){
       auto current_time = std::chrono::steady_clock::now();
-      info.time = std::chrono::duration<float>(current_time.time_since_epoch()).count();
-
       float dt = std::chrono::duration<float>(current_time - prev_time).count();
+
       info.dt = dt;
+      info.time += dt;
 
       int rs = read_serial(file_desc, imu_data);
       if (rs < 0)
@@ -111,18 +113,8 @@ std::string work_dir = get_cwd();
 
       model.run();
 
-      motor_cmd[0] = prev_motor_cmd[0] = model.get_output_buffer()[1];
-      motor_cmd[1] = prev_motor_cmd[1] = model.get_output_buffer()[0];
-
-      for (auto n : motor_cmd)
-      {
-        printf("%f\t", n);
-      }
-
-      for (auto n : prev_motor_cmd){
-        printf("%f\t", n);
-      }
-      printf("\n");
+      motor_cmd[0] = prev_motor_cmd[0] = model.get_output_buffer()[0];
+      motor_cmd[1] = prev_motor_cmd[1] = - model.get_output_buffer()[1];
 
 #endif
 #ifdef PID_CONTROLLER
@@ -149,12 +141,18 @@ std::string work_dir = get_cwd();
 
       out << "\nData sent : \t " << sent_bytes << "\n";
       out << std::endl;
-    
+
 #ifdef DEBUG_LOG
-    logger << info.time << "," << info.dt << "," << info.roll << "," << info.error << "," << info.ctrl << info.pwm << std::endl;
+    info.roll = imu_data[0];
+    // info.error = error;
+    info.pwm_1 = action_to_pwm(motor_cmd[0]);
+    info.pwm_2 = action_to_pwm(motor_cmd[1]);
+    logger << info.time << "," << info.dt << "," << info.roll << "," << info.pwm_1 << "," << info.pwm_2 << std::endl;
+
 #endif
-      // std::this_thread::sleep_until(next_wake_time);
-      // next_wake_time += PERIOD;
+    
+      std::this_thread::sleep_until(current_time + PERIOD);
+
       std::cout << out.str() << std::endl;
       prev_time = current_time;
     }
@@ -183,14 +181,14 @@ void control_step(const std::vector<float> &input, std::array<float, 2> &output,
 
   pid.prev_error = error;
 
-  output[0] = -control_signal;
-  output[1] = control_signal;
+  output[0] = control_signal;
+  output[1] = -control_signal;
 
 #ifdef DEBUG_LOG
-    info.roll = current_roll;
+    /* info.roll = current_roll;
     info.error = error;
     info.ctrl = control_signal;
-    info.pwm = torque_to_pwm(control_signal);
+    info.pwm_1 = action_to_pwm(control_signal); */
 #endif
 
   // for (auto& cmd : output) {
@@ -199,7 +197,6 @@ void control_step(const std::vector<float> &input, std::array<float, 2> &output,
   // }
 }
 
-// only using metho
 
 // reads from the serial port and update imu value
 int read_serial(const int file_desc, std::vector<float> &imu_data)
@@ -221,13 +218,6 @@ int read_serial(const int file_desc, std::vector<float> &imu_data)
     printf("Corrupted data: %c\t %c\n", buffer[0], buffer[15]);
     return -1;
   }
-
-#ifdef DEBUG_SERIAL
-  for (int i = 0; i < num_bytes; i++)
-  {
-    printf("%x\t", buffer[i]);
-  }
-#endif
   int size = sizeof(float) * buffer[2]; // second character contains information about the size;
   int start_index = 3;
   std::memcpy(imu_data.data(), buffer.data() + start_index, size);
@@ -242,7 +232,7 @@ int send_serial(const int file_desc, std::array<float, 2> &data)
 
   buffer[0] = 's'; // starting character
   buffer[1] = 'f'; // the type of data being sent
-  buffer[2] = 2;
+  buffer[2] = 2; 
   int size = sizeof(float) * 2;
 
   // memory to memory copy of the data starting at index 3
@@ -306,14 +296,11 @@ int config_serial()
   return file_desc;
 }
 
-int torque_to_pwm(float torque){ 
-  constexpr float STALL_TORQUE = 1.05f;
-  constexpr float PWM_MIN = 80;
-  constexpr float PWM_MAX = 255;
+int action_to_pwm(float action){ 
+  constexpr float MIN_DUTY = 0.375f;
+  constexpr float DUTY_RANGE = 1.f - MIN_DUTY;
 
-  float speed = ((torque) / STALL_TORQUE);
-  int pwm = PWM_MIN + static_cast<int>(speed * (PWM_MAX - PWM_MIN)); 
-  return pwm;
+  return static_cast<int>((action * DUTY_RANGE + MIN_DUTY) * 255.f);
 }
 
 std::string get_cwd(){
@@ -322,4 +309,12 @@ std::string get_cwd(){
   std::filesystem::path parent = cwd.parent_path();
   std::cout << "Parent directory is : " << parent << std::endl;
   return parent.string();
+}
+
+std::string get_log_time(){
+  std::time_t t = std::time(0);
+  std::tm* now = std::localtime(&t);
+  std::ostringstream oss;
+  oss << (now->tm_year + 1900) << '-' << (now->tm_mon + 1) << '-' << now->tm_mday << "_" << now->tm_hour << "-" << now->tm_min << "-" << now->tm_sec;
+  return oss.str();
 }

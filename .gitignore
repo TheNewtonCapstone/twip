@@ -35,4 +35,6 @@ install/
 build/
 .vscode/
 
+# temp files
+logs/
 

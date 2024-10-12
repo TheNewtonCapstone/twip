@@ -30,12 +30,12 @@ private:
 
     Ort::Value input_tensor{ nullptr };
     // shape specifies the dimensions of the input/output sensor
-    std::array<int64_t, 1> input_shape;
+    std::array<int64_t, 2> input_shape;
     std::vector<float> input_buffer;
 
 
     Ort::Value output_tensor{ nullptr };
-    std::array<int64_t, 1> output_shape;
+    std::array<int64_t, 2> output_shape;
     std::vector<float> output_buffer;
 
 

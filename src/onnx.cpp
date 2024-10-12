@@ -5,8 +5,8 @@ OnnxHandler::OnnxHandler(const std::string _path, const int _num_inputs, const i
   init_onnx_session();
 
   // shape specifies the dimensions of the input/output sensor
-  input_shape = {num_inputs};
-  output_shape = {num_outputs};
+  input_shape = {1, num_inputs}; 
+  output_shape = {1, num_outputs};
 
   input_buffer = std::vector<float>(_num_inputs);
   output_buffer = std::vector<float>(_num_ouputs);
