@@ -1,6 +1,5 @@
 # Prerequisites
 *.d
-
 # Compiled Object files
 *.slo
 *.lo
@@ -33,8 +32,9 @@
 
 # build and install files 
 install/
-log/
 build/
 .vscode/
 
+# temp files
+logs/
 
