@@ -30,9 +30,10 @@ struct PID
   float ki;
   float integral;
   float prev_error;
+  int integral_limit;
 };
 
-PID pid = {1.35, 0.04, 0.15, .0f, .0f};
+PID pid = {0.9, 0.025, 0.0, .0f, .0f, 0};
 
 struct log_data
 {
@@ -141,6 +142,8 @@ void control_step(const std::vector<float> &input, std::array<float, 2> &output,
 
   // PID calculations
   pid.integral += error * dt;
+  pid.integral_limit+= pid.integral > 100 ? 100 : pid.integral < -100 ? -100 : 0;
+  pid.integral_limit += 1;
 
   float derivative = (error - pid.prev_error) / dt;
 
