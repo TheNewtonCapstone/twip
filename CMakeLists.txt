@@ -24,6 +24,8 @@ if (BUILD_ORT)
     # External project to download and build ONNX Runtime
     set(ORT_TAG v1.19.0)
     set(ORT_DIR ${CMAKE_BINARY_DIR}/onnxruntime)
+    set(ORT_INSTALL_DIR ${ORT_DIR}/install)
+    set(ORT_BUILD_CONFIG "Release")
 
     if (GIT_USE_SSH)
         set(ORT_GIT_REPOSITORY "git@github.com:microsoft/onnxruntime.git")
@@ -31,7 +33,7 @@ if (BUILD_ORT)
         set(ORT_GIT_REPOSITORY "https://github.com/microsoft/onnxruntime.git")
     endif()
 
-    message(STATUS "Will download & build ORT (${ORT_TAG}) in ${ORT_DIR}, with ${ORT_GIT_REPOSITORY}.")
+    message(STATUS "Will download & build ORT (${ORT_TAG}, ${ORT_BUILD_CONFIG}) in ${ORT_DIR}, with ${ORT_GIT_REPOSITORY}.")
     
     ExternalProject_Add(
         onnxruntime
@@ -41,21 +43,19 @@ if (BUILD_ORT)
         GIT_PROGRESS ON
         GIT_SHALLOW ON
         CONFIGURE_COMMAND "" # Disables CMake configuration
-        BUILD_COMMAND bash build.sh --config ${CMAKE_BUILD_TYPE} --parallel --skip_tests --skip_submodule_sync --cmake_extra_defines CMAKE_INSTALL_PREFIX=${ORT_DIR}/install
-        INSTALL_COMMAND ""
+        BUILD_COMMAND bash build.sh --config ${ORT_BUILD_CONFIG} --update --parallel --build_shared_lib --skip_tests --skip_submodule_sync --cmake_extra_defines CMAKE_INSTALL_PREFIX=${ORT_DIR}/install && cd build/Linux/${ORT_BUILD_CONFIG} && make install
+        INSTALL_COMMAND "" # Disables CMake installation
         BUILD_IN_SOURCE ON
     )
-    ExternalProject_Get_Property(onnxruntime install_dir)
-    set(ORT_INSTALL_DIR ${install_dir})
 
     # Ensure that the target directories exist at configure time
     file(MAKE_DIRECTORY ${ORT_INSTALL_DIR}/lib)
     file(MAKE_DIRECTORY ${ORT_INSTALL_DIR}/include)
 
     # Tell CMake to use the ONNX Runtime libraries
-    add_library(onnxruntime_lib STATIC IMPORTED)
+    add_library(onnxruntime_lib STATIC IMPORTED onnxruntime)
     set_target_properties(onnxruntime_lib PROPERTIES
-        IMPORTED_LOCATION ${ORT_INSTALL_DIR}/lib/libonnxruntime.a
+        IMPORTED_LOCATION ${ORT_INSTALL_DIR}/lib/libonnxruntime_common.a
         INTERFACE_INCLUDE_DIRECTORIES ${ORT_INSTALL_DIR}/include
     )
 else()
@@ -68,7 +68,7 @@ else()
         message(FATAL_ERROR "Skipped building ORT, but cannot find system installation.")
     endif()
 
-    add_library(onnxruntime_lib STATIC IMPORTED)
+    add_library(onnxruntime_lib STATIC IMPORTED onnxruntime)
     set_target_properties(onnxruntime_lib PROPERTIES
         IMPORTED_LOCATION /usr/local/include/onnxruntime
         INTERFACE_INCLUDE_DIRECTORIES /usr/local/lib/onnxruntime
