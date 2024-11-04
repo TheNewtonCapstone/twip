@@ -43,20 +43,20 @@ if (BUILD_ORT)
         GIT_PROGRESS ON
         GIT_SHALLOW ON
         CONFIGURE_COMMAND "" # Disables CMake configuration
-        BUILD_COMMAND bash build.sh --config ${ORT_BUILD_CONFIG} --update --parallel --build_shared_lib --skip_tests --skip_submodule_sync --cmake_extra_defines CMAKE_INSTALL_PREFIX=${ORT_DIR}/install && cd build/Linux/${ORT_BUILD_CONFIG} && make install
+        BUILD_COMMAND bash build.sh --config ${ORT_BUILD_CONFIG} --update --parallel --skip_tests --skip_submodule_sync --cmake_extra_defines CMAKE_INSTALL_PREFIX=${ORT_DIR}/install && cd build/Linux/${ORT_BUILD_CONFIG} && make install
         INSTALL_COMMAND "" # Disables CMake installation
         BUILD_IN_SOURCE ON
     )
 
     # Ensure that the target directories exist at configure time
     file(MAKE_DIRECTORY ${ORT_INSTALL_DIR}/lib)
-    file(MAKE_DIRECTORY ${ORT_INSTALL_DIR}/include)
+    file(MAKE_DIRECTORY ${ORT_INSTALL_DIR}/include/onnxruntime)
 
     # Tell CMake to use the ONNX Runtime libraries
     add_library(onnxruntime_lib STATIC IMPORTED onnxruntime)
     set_target_properties(onnxruntime_lib PROPERTIES
         IMPORTED_LOCATION ${ORT_INSTALL_DIR}/lib/libonnxruntime_common.a
-        INTERFACE_INCLUDE_DIRECTORIES ${ORT_INSTALL_DIR}/include
+        INTERFACE_INCLUDE_DIRECTORIES ${ORT_INSTALL_DIR}/include/onnxruntime
     )
 else()
     message(STATUS "Will skip building ORT, using system installation.")
@@ -103,7 +103,3 @@ elseif(${CONTROLLER_TYPE} STREQUAL "pid")
 endif()
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
-
-install(TARGETS ${CONTROLLER_PROJECT_NAME}
-      DESTINATION lib/${CONTROLLER_PROJECT_NAME}
-      )
